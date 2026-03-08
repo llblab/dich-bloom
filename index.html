@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <title>DICH // Bloom</title>
+    <title>DICH // BLOOM</title>
     <style>
       :root {
         --bg: #05060c;
@@ -224,7 +224,7 @@
   <body>
     <div id="activationScreen">
       <div id="activationCard" class="glass">
-        <h1>DICH // Bloom</h1>
+        <h1>DICH // BLOOM</h1>
         <p>
           An autonomous audiovisual ecosystem of particles, filaments, and
           harmonic cells. Every launch mutates the world, every minute it
@@ -304,7 +304,18 @@
 
         const WAVE_POOL = ["sine", "triangle", "sawtooth", "square"];
         const FILTER_TYPES = ["lowpass", "bandpass", "highpass"];
-        const PERC_STYLES = ["click", "tom", "hat", "snap", "fm", "noise", "metallic", "grain", "pluck", "breath"];
+        const PERC_STYLES = [
+          "click",
+          "tom",
+          "hat",
+          "snap",
+          "fm",
+          "noise",
+          "metallic",
+          "grain",
+          "pluck",
+          "breath",
+        ];
         function rollGene() {
           return {
             wave1: choice(WAVE_POOL),
@@ -643,12 +654,24 @@
             name: "Obsidian Choir",
             rarity: "rare",
             weight: 0.13,
-            densityMul: 0.78, distanceMul: 1.22, energyMul: 1.06,
-            wetMul: 1.36, bloomMul: 1.48, particleSizeMul: 1.18,
-            pulseMul: 0.74, driftMul: 0.72, speedMul: 0.84,
-            pitchMul: 0.82, filterMul: 0.78, lineDetuneMul: 0.58,
-            lineModChance: 1.22, triangleReleaseMul: 1.56, shimmerMul: 1.08,
-            bassSubMul: 1.52, droneGainMul: 1.44, droneFilterMul: 0.72,
+            densityMul: 0.78,
+            distanceMul: 1.22,
+            energyMul: 1.06,
+            wetMul: 1.36,
+            bloomMul: 1.48,
+            particleSizeMul: 1.18,
+            pulseMul: 0.74,
+            driftMul: 0.72,
+            speedMul: 0.84,
+            pitchMul: 0.82,
+            filterMul: 0.78,
+            lineDetuneMul: 0.58,
+            lineModChance: 1.22,
+            triangleReleaseMul: 1.56,
+            shimmerMul: 1.08,
+            bassSubMul: 1.52,
+            droneGainMul: 1.44,
+            droneFilterMul: 0.72,
             dronePanDepth: 0.54,
             particleWaves: ["sine", "triangle"],
             lineWaves: ["sine", "sine", "triangle"],
@@ -662,12 +685,24 @@
             name: "Silk Thread",
             rarity: "common",
             weight: 0.85,
-            densityMul: 0.92, distanceMul: 1.16, energyMul: 0.84,
-            wetMul: 1.14, bloomMul: 1.18, particleSizeMul: 0.78,
-            pulseMul: 1.28, driftMul: 1.04, speedMul: 0.94,
-            pitchMul: 1.18, filterMul: 1.28, lineDetuneMul: 0.72,
-            lineModChance: 1.18, triangleReleaseMul: 1.14, shimmerMul: 1.54,
-            bassSubMul: 0.72, droneGainMul: 0.86, droneFilterMul: 1.32,
+            densityMul: 0.92,
+            distanceMul: 1.16,
+            energyMul: 0.84,
+            wetMul: 1.14,
+            bloomMul: 1.18,
+            particleSizeMul: 0.78,
+            pulseMul: 1.28,
+            driftMul: 1.04,
+            speedMul: 0.94,
+            pitchMul: 1.18,
+            filterMul: 1.28,
+            lineDetuneMul: 0.72,
+            lineModChance: 1.18,
+            triangleReleaseMul: 1.14,
+            shimmerMul: 1.54,
+            bassSubMul: 0.72,
+            droneGainMul: 0.86,
+            droneFilterMul: 1.32,
             dronePanDepth: 1.18,
             particleWaves: ["sine", "sine"],
             lineWaves: ["sine", "triangle", "sine"],
@@ -675,18 +710,30 @@
             bassWaves: ["triangle", "sine"],
             pluckWaves: ["sine", "triangle"],
             droneVoiceTypes: ["sine", "triangle", "sine"],
-            droneGains: [0.28, 0.10, 0.08],
+            droneGains: [0.28, 0.1, 0.08],
           },
           {
             name: "Iron Garden",
             rarity: "common",
             weight: 0.88,
-            densityMul: 1.12, distanceMul: 0.94, energyMul: 1.18,
-            wetMul: 0.78, bloomMul: 0.88, particleSizeMul: 1.02,
-            pulseMul: 1.22, driftMul: 1.18, speedMul: 1.14,
-            pitchMul: 0.96, filterMul: 1.04, lineDetuneMul: 1.48,
-            lineModChance: 1.08, triangleReleaseMul: 0.86, shimmerMul: 0.76,
-            bassSubMul: 1.14, droneGainMul: 0.88, droneFilterMul: 0.94,
+            densityMul: 1.12,
+            distanceMul: 0.94,
+            energyMul: 1.18,
+            wetMul: 0.78,
+            bloomMul: 0.88,
+            particleSizeMul: 1.02,
+            pulseMul: 1.22,
+            driftMul: 1.18,
+            speedMul: 1.14,
+            pitchMul: 0.96,
+            filterMul: 1.04,
+            lineDetuneMul: 1.48,
+            lineModChance: 1.08,
+            triangleReleaseMul: 0.86,
+            shimmerMul: 0.76,
+            bassSubMul: 1.14,
+            droneGainMul: 0.88,
+            droneFilterMul: 0.94,
             dronePanDepth: 0.88,
             particleWaves: ["square", "triangle"],
             lineWaves: ["square", "sawtooth", "triangle"],
@@ -714,6 +761,7 @@
         const MAX_POLY_BURSTS = 40;
         const MAX_FROZEN_TRIANGLES = 20;
         const MAX_TRAIL_POINTS = 28;
+        const perf = buildPerformanceProfile();
 
         const starfield = {
           canvas: document.createElement("canvas"),
@@ -822,6 +870,39 @@
           };
         }
 
+        function buildPerformanceProfile() {
+          return {
+            coarsePointer: false,
+            lowPower: false,
+            maxDpr: 2,
+            starDensity: 1,
+            dynamicStars: true,
+            auroraLayers: 3,
+            auroraBloomPass: true,
+            sparksScale: 1,
+            rippleScale: 1,
+            trailStepMul: 1,
+            maxTrailPoints: MAX_TRAIL_POINTS,
+            edgeRebuildInterval: 1,
+            triangleRebuildInterval: 1,
+            secretComboInterval: 2,
+            particleTargetMul: 1,
+            connectionDistanceMul: 1,
+            maxSparks: MAX_SPARKS,
+            maxRipples: MAX_RIPPLES,
+            maxBeams: MAX_BEAMS,
+            maxPolyBursts: MAX_POLY_BURSTS,
+            maxFrozenTriangles: MAX_FROZEN_TRIANGLES,
+            drawMechanicHints: true,
+            drawCursorTrail: true,
+            simpleParticles: false,
+            simpleEdges: false,
+            simpleSparks: false,
+            simpleFrozenTriangles: false,
+            simpleCursor: false,
+          };
+        }
+
         function evolutionLabelForLevel(level) {
           if (level < 0.22) return "Genesis";
           if (level < 0.46) return "Drift";
@@ -833,7 +914,7 @@
         const state = {
           width: window.innerWidth,
           height: window.innerHeight,
-          dpr: Math.min(2, window.devicePixelRatio || 1),
+          dpr: Math.min(perf.maxDpr, window.devicePixelRatio || 1),
           running: false,
           paused: false,
           uiVisible: false,
@@ -920,7 +1001,14 @@
           comboChainWindowMs: 1800,
           tier: 0,
           tierThresholds: [8, 22, 50, 100, 180],
-          tierNames: ["Wanderer", "Seeker", "Resonant", "Architect", "Ascended", "Transcendent"],
+          tierNames: [
+            "Wanderer",
+            "Seeker",
+            "Resonant",
+            "Architect",
+            "Ascended",
+            "Transcendent",
+          ],
           mutationCount: 0,
           nextMutationAt: 0,
           mutationIntervalMs: 0,
@@ -943,22 +1031,151 @@
         };
 
         const MUTATION_TYPES = [
-          { name: "gravity-flip", apply: () => { state.gravityWarp *= -1; }, revert: () => { state.gravityWarp = Math.abs(state.gravityWarp); } },
-          { name: "hyper-speed", apply: () => { state.speedWarp *= 1.8; }, revert: () => { state.speedWarp /= 1.8; } },
-          { name: "slow-motion", apply: () => { state.speedWarp *= 0.4; }, revert: () => { state.speedWarp /= 0.4; } },
-          { name: "dense-cloud", apply: () => { state.targetParticleTarget = Math.min(56, state.particleTarget + 14); syncParticleCount(); }, revert: () => {} },
-          { name: "sparse-void", apply: () => { state.targetParticleTarget = Math.max(18, state.particleTarget - 10); syncParticleCount(); }, revert: () => {} },
-          { name: "long-reach", apply: () => { state.distanceWarp *= 1.5; }, revert: () => { state.distanceWarp /= 1.5; } },
-          { name: "tight-web", apply: () => { state.distanceWarp *= 0.6; }, revert: () => { state.distanceWarp /= 0.6; } },
-          { name: "echo-chamber", apply: () => { state.wetWarp *= 1.7; }, revert: () => { state.wetWarp /= 1.7; } },
-          { name: "dry-bones", apply: () => { state.wetWarp *= 0.3; }, revert: () => { state.wetWarp /= 0.3; } },
-          { name: "gene-storm", apply: () => { for (const p of particles) p.gene = rollGene(); }, revert: () => {} },
-          { name: "orbit-surge", apply: () => { state.orbitWarp *= 2.2; }, revert: () => { state.orbitWarp /= 2.2; } },
-          { name: "flash-storm", apply: () => { state.flashWarp *= 2.0; }, revert: () => { state.flashWarp /= 2.0; } },
-          { name: "drift-dream", apply: () => { state.driftWarp *= 2.5; }, revert: () => { state.driftWarp /= 2.5; } },
-          { name: "micro-verse", apply: () => { state.sizeWarp *= 0.5; }, revert: () => { state.sizeWarp /= 0.5; } },
-          { name: "macro-verse", apply: () => { state.sizeWarp *= 1.8; }, revert: () => { state.sizeWarp /= 1.8; } },
-          { name: "scale-shift", apply: () => { state.scaleIndex = (state.scaleIndex + randInt(1, 5)) % SCALE_LIBRARY.length; }, revert: () => {} },
+          {
+            name: "gravity-flip",
+            apply: () => {
+              state.gravityWarp *= -1;
+            },
+            revert: () => {
+              state.gravityWarp = Math.abs(state.gravityWarp);
+            },
+          },
+          {
+            name: "hyper-speed",
+            apply: () => {
+              state.speedWarp *= 1.8;
+            },
+            revert: () => {
+              state.speedWarp /= 1.8;
+            },
+          },
+          {
+            name: "slow-motion",
+            apply: () => {
+              state.speedWarp *= 0.4;
+            },
+            revert: () => {
+              state.speedWarp /= 0.4;
+            },
+          },
+          {
+            name: "dense-cloud",
+            apply: () => {
+              state.targetParticleTarget = Math.min(
+                56,
+                state.particleTarget + 14,
+              );
+              syncParticleCount();
+            },
+            revert: () => {},
+          },
+          {
+            name: "sparse-void",
+            apply: () => {
+              state.targetParticleTarget = Math.max(
+                18,
+                state.particleTarget - 10,
+              );
+              syncParticleCount();
+            },
+            revert: () => {},
+          },
+          {
+            name: "long-reach",
+            apply: () => {
+              state.distanceWarp *= 1.5;
+            },
+            revert: () => {
+              state.distanceWarp /= 1.5;
+            },
+          },
+          {
+            name: "tight-web",
+            apply: () => {
+              state.distanceWarp *= 0.6;
+            },
+            revert: () => {
+              state.distanceWarp /= 0.6;
+            },
+          },
+          {
+            name: "echo-chamber",
+            apply: () => {
+              state.wetWarp *= 1.7;
+            },
+            revert: () => {
+              state.wetWarp /= 1.7;
+            },
+          },
+          {
+            name: "dry-bones",
+            apply: () => {
+              state.wetWarp *= 0.3;
+            },
+            revert: () => {
+              state.wetWarp /= 0.3;
+            },
+          },
+          {
+            name: "gene-storm",
+            apply: () => {
+              for (const p of particles) p.gene = rollGene();
+            },
+            revert: () => {},
+          },
+          {
+            name: "orbit-surge",
+            apply: () => {
+              state.orbitWarp *= 2.2;
+            },
+            revert: () => {
+              state.orbitWarp /= 2.2;
+            },
+          },
+          {
+            name: "flash-storm",
+            apply: () => {
+              state.flashWarp *= 2.0;
+            },
+            revert: () => {
+              state.flashWarp /= 2.0;
+            },
+          },
+          {
+            name: "drift-dream",
+            apply: () => {
+              state.driftWarp *= 2.5;
+            },
+            revert: () => {
+              state.driftWarp /= 2.5;
+            },
+          },
+          {
+            name: "micro-verse",
+            apply: () => {
+              state.sizeWarp *= 0.5;
+            },
+            revert: () => {
+              state.sizeWarp /= 0.5;
+            },
+          },
+          {
+            name: "macro-verse",
+            apply: () => {
+              state.sizeWarp *= 1.8;
+            },
+            revert: () => {
+              state.sizeWarp /= 1.8;
+            },
+          },
+          {
+            name: "scale-shift",
+            apply: () => {
+              state.scaleIndex =
+                (state.scaleIndex + randInt(1, 5)) % SCALE_LIBRARY.length;
+            },
+            revert: () => {},
+          },
         ];
 
         function initRun() {
@@ -997,7 +1214,9 @@
             const j = randInt(0, i);
             [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
           }
-          run.availableModes = shuffled.slice(0, modeCount).sort((a, b) => a - b);
+          run.availableModes = shuffled
+            .slice(0, modeCount)
+            .sort((a, b) => a - b);
           if (!run.availableModes.includes(0)) run.availableModes[0] = 0;
           run.availableModes.sort((a, b) => a - b);
         }
@@ -1043,13 +1262,20 @@
             if (evolves) {
               run.triangleActivations++;
               state.evolutionLevel = clamp(
-                Math.max(state.evolutionLevel, 0.12 + run.triangleActivations * 0.018),
+                Math.max(
+                  state.evolutionLevel,
+                  0.12 + run.triangleActivations * 0.018,
+                ),
                 0,
                 1.2,
               );
               state.audioBloom = clamp(state.audioBloom + 0.03, 0, 0.9);
               if (run.triangleActivations % 3 === 0) {
-                rollEvolutionTarget(ts, false, 0.08 + run.triangleActivations * 0.004);
+                rollEvolutionTarget(
+                  ts,
+                  false,
+                  0.08 + run.triangleActivations * 0.004,
+                );
               }
               if (run.triangleActivations % 5 === 0) unlockRunMode();
             }
@@ -1057,7 +1283,8 @@
           const timeSinceLast = ts - run.lastTriggerTs;
           if (timeSinceLast < run.comboChainWindowMs) {
             run.comboChain++;
-            if (run.comboChain > run.comboChainBest) run.comboChainBest = run.comboChain;
+            if (run.comboChain > run.comboChainBest)
+              run.comboChainBest = run.comboChain;
           } else {
             run.comboChain = 1;
           }
@@ -1100,15 +1327,25 @@
           spawnRipple(mouse.x, mouse.y, state.hueShift + run.tier * 40, scale);
           for (let i = 0; i < 3 + run.tier * 2; i++) {
             spawnSparks(
-              mouse.x + rand(-40, 40), mouse.y + rand(-40, 40),
+              mouse.x + rand(-40, 40),
+              mouse.y + rand(-40, 40),
               state.hueShift + run.tier * 40 + rand(-20, 20),
-              8 + run.tier * 4, 50 + run.tier * 15, 3 + run.tier * 0.5,
+              8 + run.tier * 4,
+              50 + run.tier * 15,
+              3 + run.tier * 0.5,
             );
           }
           if (run.tier >= 1) unlockRunMode();
-          state.audioBloom = clamp(state.audioBloom + 0.15 + run.tier * 0.06, 0, 0.85);
+          state.audioBloom = clamp(
+            state.audioBloom + 0.15 + run.tier * 0.06,
+            0,
+            0.85,
+          );
           if (run.tier >= 3) {
-            run.comboChainWindowMs = Math.min(2600, run.comboChainWindowMs + 200);
+            run.comboChainWindowMs = Math.min(
+              2600,
+              run.comboChainWindowMs + 200,
+            );
           }
         }
 
@@ -1127,7 +1364,10 @@
           );
           if (ts - run.lastTriangleGrowthTs < 220) return;
           run.lastTriangleGrowthTs = ts;
-          const addCount = Math.min(2, 56 - particles.length);
+          const addCount = Math.min(
+            perf.lowPower ? 1 : 2,
+            (perf.lowPower ? 40 : 56) - particles.length,
+          );
           if (addCount <= 0) return;
           for (let i = 0; i < addCount; i++) {
             const p = makeParticle(
@@ -1142,14 +1382,25 @@
           }
           state.particleTarget = particles.length;
           state.particleTargetValue = particles.length;
-          state.targetParticleTarget = Math.max(state.targetParticleTarget, particles.length);
-          spawnSparks(tri.cx, tri.cy, tri.avgHue + 40, 10 + addCount * 4, 40, 2.8);
+          state.targetParticleTarget = Math.max(
+            state.targetParticleTarget,
+            particles.length,
+          );
+          spawnSparks(
+            tri.cx,
+            tri.cy,
+            tri.avgHue + 40,
+            10 + addCount * 4,
+            40,
+            2.8,
+          );
           spawnRipple(tri.cx, tri.cy, tri.avgHue + 20, 1 + addCount * 0.2);
         }
 
         function chargeTriangleGrip(tri, ts) {
           const areaNorm = clamp(
-            tri.area / Math.max(1, state.connectionDistance * state.connectionDistance),
+            tri.area /
+              Math.max(1, state.connectionDistance * state.connectionDistance),
             0,
             1,
           );
@@ -1159,11 +1410,16 @@
             1.6,
           );
           run.lastActivityTs = ts;
-          state.audioBloom = clamp(state.audioBloom + 0.01 + areaNorm * 0.02, 0, 0.9);
+          state.audioBloom = clamp(
+            state.audioBloom + 0.01 + areaNorm * 0.02,
+            0,
+            0.9,
+          );
         }
 
         function spawnActivationRipple(x, y, hue, strength = 1) {
-          const rippleScale = (1.4 + strength * 1.1) * state.rippleWarp;
+          const rippleScale =
+            (1.4 + strength * 1.1) * state.rippleWarp * perf.rippleScale;
           ripples.push({
             x,
             y,
@@ -1177,7 +1433,7 @@
             strength,
             triggered: new Set(),
           });
-          trimArray(ripples, MAX_RIPPLES);
+          trimArray(ripples, perf.maxRipples);
         }
 
         function attachedSatelliteCount() {
@@ -1220,7 +1476,14 @@
             p.vy = Math.sin(angle) * radial + Math.cos(angle) * tangent;
             p.flash = Math.max(p.flash, 1);
             p.glitch = Math.max(p.glitch, 0.75);
-            spawnSparks(p.x, p.y, p.hue + 30, 8 + Math.round(burst * 5), 24, 2.8 + burst * 0.8);
+            spawnSparks(
+              p.x,
+              p.y,
+              p.hue + 30,
+              8 + Math.round(burst * 5),
+              24,
+              2.8 + burst * 0.8,
+            );
           }
           satelliteState.targetId = "";
           satelliteState.startedAt = 0;
@@ -1233,7 +1496,10 @@
             return;
           }
           const strength = clamp(run.triangleGripCharge, 0, 1.5);
-          const rings = Math.max(1, Math.min(4, Math.round(1 + strength * 1.8)));
+          const rings = Math.max(
+            1,
+            Math.min(4, Math.round(1 + strength * 1.8)),
+          );
           for (let i = 0; i < rings; i++) {
             spawnActivationRipple(
               mouse.x,
@@ -1251,7 +1517,11 @@
             3.6 + strength * 1.2,
           );
           releaseSatellites(strength);
-          state.audioBloom = clamp(state.audioBloom + 0.12 + strength * 0.16, 0, 0.95);
+          state.audioBloom = clamp(
+            state.audioBloom + 0.12 + strength * 0.16,
+            0,
+            0.95,
+          );
           run.triangleGripCharge = 0;
         }
 
@@ -1271,8 +1541,10 @@
           }
           for (let i = 0; i < 5; i++) {
             spawnRipple(
-              mouse.x + rand(-20, 20), mouse.y + rand(-20, 20),
-              state.hueShift + i * 30, 1.5 + i * 0.3,
+              mouse.x + rand(-20, 20),
+              mouse.y + rand(-20, 20),
+              state.hueShift + i * 30,
+              1.5 + i * 0.3,
             );
           }
           spawnSparks(mouse.x, mouse.y, state.hueShift, 40, 100, 5);
@@ -1283,21 +1555,25 @@
 
         function triggerRareEvent(ts) {
           run.lastRareEventTs = ts;
+          const anchor = worldEventAnchor();
           const type = randInt(0, 4);
           if (type === 0) {
             for (const p of particles) p.gene = rollGene();
-            spawnSparks(state.width * 0.5, state.height * 0.5, state.hueShift + 180, 30, 120, 4);
+            spawnSparks(anchor.x, anchor.y, state.hueShift + 180, 30, 120, 4);
           } else if (type === 1) {
-            state.scaleIndex = (state.scaleIndex + randInt(1, 4)) % SCALE_LIBRARY.length;
+            state.scaleIndex =
+              (state.scaleIndex + randInt(1, 4)) % SCALE_LIBRARY.length;
             state.keyRoot = (state.keyRoot + randInt(1, 6)) % 12;
-            spawnRipple(state.width * 0.5, state.height * 0.5, state.hueShift + 120, 2);
+            spawnRipple(anchor.x, anchor.y, state.hueShift + 120, 2);
           } else if (type === 2) {
             state.hueShift = mod(state.hueShift + rand(60, 180), 360);
             for (const p of particles) p.hue = mod(p.hue + rand(40, 120), 360);
           } else if (type === 3) {
             for (const p of particles) {
               const k = Object.keys(p.gene);
-              const trait = choice(k.filter((t) => typeof p.gene[t] === "number"));
+              const trait = choice(
+                k.filter((t) => typeof p.gene[t] === "number"),
+              );
               if (!trait) continue;
               const fresh = rollGene();
               p.gene[trait] = fresh[trait];
@@ -1326,41 +1602,56 @@
           if (ts > run.burstCooldownUntil) {
             run.burstMeter = clamp(run.burstMeter - 0.004 * dt, 0, 1.2);
           }
-          if (run.burstMeter >= run.burstThreshold && ts > run.burstCooldownUntil) {
+          if (
+            run.burstMeter >= run.burstThreshold &&
+            ts > run.burstCooldownUntil
+          ) {
             triggerBurstExplosion(ts);
           }
           if (run.activeMutation) {
             if (ts - run.mutationStartedAt > run.mutationLifeMs) {
+              const anchor = worldEventAnchor();
               run.activeMutation.revert();
               run.activeMutation = null;
-              spawnRipple(state.width * 0.5, state.height * 0.5, state.hueShift + 60, 1.2);
+              spawnRipple(anchor.x, anchor.y, state.hueShift + 60, 1.2);
             }
           }
           if (!run.activeMutation && ts > run.nextMutationAt) {
+            const anchor = worldEventAnchor();
             const mut = choice(MUTATION_TYPES);
             run.activeMutation = mut;
             run.mutationStartedAt = ts;
             run.mutationLifeMs = rand(8000, 22000);
-            run.nextMutationAt = ts + run.mutationIntervalMs + rand(-4000, 6000);
+            run.nextMutationAt =
+              ts + run.mutationIntervalMs + rand(-4000, 6000);
             run.mutationCount++;
             mut.apply();
-            spawnRipple(state.width * 0.5, state.height * 0.5, state.hueShift + 180, 1.8);
-            spawnSparks(state.width * 0.5, state.height * 0.5, state.hueShift + 180, 18, 80, 3.5);
+            spawnRipple(anchor.x, anchor.y, state.hueShift + 180, 1.8);
+            spawnSparks(anchor.x, anchor.y, state.hueShift + 180, 18, 80, 3.5);
             state.audioBloom = clamp(state.audioBloom + 0.18, 0, 0.85);
             if (run.mutationCount > 3) {
-              run.mutationIntervalMs = clamp(run.mutationIntervalMs * 0.88, 10000, 42000);
+              run.mutationIntervalMs = clamp(
+                run.mutationIntervalMs * 0.88,
+                10000,
+                42000,
+              );
             }
           }
-          if (Math.random() < run.rareEventChance * dt * 0.001
-              && ts - run.lastRareEventTs > 30000
-              && run.tier >= 1) {
+          if (
+            Math.random() < run.rareEventChance * dt * 0.001 &&
+            ts - run.lastRareEventTs > 30000 &&
+            run.tier >= 1
+          ) {
             triggerRareEvent(ts);
           }
           for (const p of particles) {
-            if (!run.discoveredWaves.has(p.gene.wave1)) run.discoveredWaves.add(p.gene.wave1);
-            if (!run.discoveredPercStyles.has(p.gene.percStyle)) run.discoveredPercStyles.add(p.gene.percStyle);
+            if (!run.discoveredWaves.has(p.gene.wave1))
+              run.discoveredWaves.add(p.gene.wave1);
+            if (!run.discoveredPercStyles.has(p.gene.percStyle))
+              run.discoveredPercStyles.add(p.gene.percStyle);
           }
-          if (!run.discoveredScales.has(state.scaleIndex)) run.discoveredScales.add(state.scaleIndex);
+          if (!run.discoveredScales.has(state.scaleIndex))
+            run.discoveredScales.add(state.scaleIndex);
         }
 
         const mouse = {
@@ -1414,15 +1705,15 @@
 
         // --- Loudness Normalization ---
         const LOUDNESS_NORM = {
-          'particle':      { cal: 1.0,  duck: 0.06, recover: 0.035 },
-          'line':          { cal: 0.92, duck: 0.08, recover: 0.045 },
-          'triangle':      { cal: 1.08, duck: 0.10, recover: 0.055 },
-          'combo-pluck':   { cal: 1.05, duck: 0.08, recover: 0.045 },
-          'combo-bass':    { cal: 0.86, duck: 0.12, recover: 0.06 },
-          'combo':         { cal: 1.02, duck: 0.10, recover: 0.05 },
-          'impulse':       { cal: 1.02, duck: 0.08, recover: 0.045 },
-          'impulse-hit':   { cal: 0.84, duck: 0.06, recover: 0.035 },
-          '_default':      { cal: 1.0,  duck: 0.06, recover: 0.04 },
+          particle: { cal: 1.0, duck: 0.06, recover: 0.035 },
+          line: { cal: 0.92, duck: 0.08, recover: 0.045 },
+          triangle: { cal: 1.08, duck: 0.1, recover: 0.055 },
+          "combo-pluck": { cal: 1.05, duck: 0.08, recover: 0.045 },
+          "combo-bass": { cal: 0.86, duck: 0.12, recover: 0.06 },
+          combo: { cal: 1.02, duck: 0.1, recover: 0.05 },
+          impulse: { cal: 1.02, duck: 0.08, recover: 0.045 },
+          "impulse-hit": { cal: 0.84, duck: 0.06, recover: 0.035 },
+          _default: { cal: 1.0, duck: 0.06, recover: 0.04 },
         };
 
         const loudness = {
@@ -1435,8 +1726,8 @@
           const config = LOUDNESS_NORM[kind] || LOUDNESS_NORM._default;
           let gain = config.cal;
           const kindDuckAmt = loudness.kindDuck.get(kind) || 0;
-          gain *= (1 - kindDuckAmt);
-          gain *= (1 - loudness.globalDuck * 0.3);
+          gain *= 1 - kindDuckAmt;
+          gain *= 1 - loudness.globalDuck * 0.3;
           gain *= clamp(1 - loudness.smoothedPressure * 0.15, 0.5, 1);
           return clamp(gain, 0.3, 1.4);
         }
@@ -1456,7 +1747,11 @@
             else loudness.kindDuck.set(kind, next);
           }
           loudness.globalDuck = Math.max(0, loudness.globalDuck - 0.025 * dt);
-          loudness.smoothedPressure = lerp(loudness.smoothedPressure, audio.pressure, 0.1 * dt);
+          loudness.smoothedPressure = lerp(
+            loudness.smoothedPressure,
+            audio.pressure,
+            0.1 * dt,
+          );
         }
 
         const comboState = {
@@ -1480,6 +1775,14 @@
 
         function harmonyLabel() {
           return `${KEY_NAMES[state.keyRoot]} ${currentScale().name}`;
+        }
+
+        function worldEventAnchor() {
+          if (!particles.length) {
+            return { x: state.width * 0.5, y: state.height * 0.5 };
+          }
+          const sample = particles[randInt(0, particles.length - 1)];
+          return { x: sample.x, y: sample.y };
         }
 
         function weightedChoice(items) {
@@ -1591,7 +1894,7 @@
         function resizeCanvas() {
           state.width = window.innerWidth;
           state.height = window.innerHeight;
-          state.dpr = Math.min(2, window.devicePixelRatio || 1);
+          state.dpr = Math.min(perf.maxDpr, window.devicePixelRatio || 1);
 
           canvas.width = Math.max(1, Math.floor(state.width * state.dpr));
           canvas.height = Math.max(1, Math.floor(state.height * state.dpr));
@@ -1626,7 +1929,9 @@
           const sctx = starfield.ctx;
           sctx.clearRect(0, 0, w, h);
 
-          const starCount = Math.floor((state.width * state.height) / 2200);
+          const starCount = Math.floor(
+            ((state.width * state.height) / 2200) * perf.starDensity,
+          );
           for (let i = 0; i < starCount; i++) {
             const x = rand(0, w);
             const y = rand(0, h);
@@ -1769,17 +2074,19 @@
             Math.round(
               lerp(rand(20, 34), rand(32, 56), intensity) *
                 state.densityWarp *
-                instrument.densityMul,
+                instrument.densityMul *
+                perf.particleTargetMul,
             ),
-            18,
-            56,
+            perf.lowPower ? 14 : 18,
+            perf.lowPower ? 40 : 56,
           );
           state.targetConnectionDistance = clamp(
             lerp(rand(132, 198), rand(248, 404), intensity) *
               state.distanceWarp *
-              instrument.distanceMul,
-            120,
-            440,
+              instrument.distanceMul *
+              perf.connectionDistanceMul,
+            perf.lowPower ? 108 : 120,
+            perf.lowPower ? 320 : 440,
           );
           state.targetEnergy = clamp(
             lerp(rand(0.24, 0.72), rand(1.12, 2.02), intensity) *
@@ -1872,15 +2179,11 @@
             state.instrumentProfile.rarity === "rare" ? 2.6 : 1.9;
           const launchCount =
             state.instrumentProfile.rarity === "rare" ? 40 : 24;
-          spawnRipple(
-            state.width * 0.5,
-            state.height * 0.5,
-            state.hueShift,
-            launchScale,
-          );
+          const anchor = worldEventAnchor();
+          spawnRipple(anchor.x, anchor.y, state.hueShift, launchScale);
           spawnSparks(
-            state.width * 0.5,
-            state.height * 0.5,
+            anchor.x,
+            anchor.y,
             state.hueShift,
             launchCount,
             90 + state.sizeWarp * 24,
@@ -1944,24 +2247,59 @@
           );
           state.audioBloom = Math.max(0, state.audioBloom - 0.014 * state.dt);
 
-          if (
-            state.modeIndex !== state.targetModeIndex &&
-            ts - state.lastEvolutionShift > state.evolutionIntervalMs * 0.25
-          ) {
-            state.modeIndex = state.targetModeIndex;
-          }
+          updateModeFromProgression();
 
           const couplingRate = 0.006 * state.dt;
-          state.bloomWarp = lerp(state.bloomWarp, state.bloomWarp * (0.88 + state.energy * 0.14), couplingRate);
-          state.driftWarp = lerp(state.driftWarp, state.driftWarp * (0.9 + state.speedWarp * 0.12), couplingRate);
-          state.sparkWarp = lerp(state.sparkWarp, state.sparkWarp * (0.85 + state.energy * 0.18), couplingRate);
-          state.trailWarp = lerp(state.trailWarp, state.trailWarp * (0.92 + state.bloom * 0.1), couplingRate);
-          state.comboWarp = lerp(state.comboWarp, state.comboWarp * (0.9 + state.evolutionLevel * 0.12), couplingRate);
-          state.flashWarp = lerp(state.flashWarp, state.flashWarp * (0.88 + state.energy * 0.15), couplingRate);
-          state.lineAlphaWarp = lerp(state.lineAlphaWarp, state.lineAlphaWarp * (0.92 + state.densityWarp * 0.1), couplingRate);
-          state.triangleAlphaWarp = lerp(state.triangleAlphaWarp, state.triangleAlphaWarp * (0.94 + state.densityWarp * 0.08), couplingRate);
-          state.rippleWarp = lerp(state.rippleWarp, state.rippleWarp * (0.93 + state.energy * 0.08), couplingRate);
-          state.beamWarp = lerp(state.beamWarp, state.beamWarp * (0.91 + state.speedWarp * 0.11), couplingRate);
+          state.bloomWarp = lerp(
+            state.bloomWarp,
+            state.bloomWarp * (0.88 + state.energy * 0.14),
+            couplingRate,
+          );
+          state.driftWarp = lerp(
+            state.driftWarp,
+            state.driftWarp * (0.9 + state.speedWarp * 0.12),
+            couplingRate,
+          );
+          state.sparkWarp = lerp(
+            state.sparkWarp,
+            state.sparkWarp * (0.85 + state.energy * 0.18),
+            couplingRate,
+          );
+          state.trailWarp = lerp(
+            state.trailWarp,
+            state.trailWarp * (0.92 + state.bloom * 0.1),
+            couplingRate,
+          );
+          state.comboWarp = lerp(
+            state.comboWarp,
+            state.comboWarp * (0.9 + state.evolutionLevel * 0.12),
+            couplingRate,
+          );
+          state.flashWarp = lerp(
+            state.flashWarp,
+            state.flashWarp * (0.88 + state.energy * 0.15),
+            couplingRate,
+          );
+          state.lineAlphaWarp = lerp(
+            state.lineAlphaWarp,
+            state.lineAlphaWarp * (0.92 + state.densityWarp * 0.1),
+            couplingRate,
+          );
+          state.triangleAlphaWarp = lerp(
+            state.triangleAlphaWarp,
+            state.triangleAlphaWarp * (0.94 + state.densityWarp * 0.08),
+            couplingRate,
+          );
+          state.rippleWarp = lerp(
+            state.rippleWarp,
+            state.rippleWarp * (0.93 + state.energy * 0.08),
+            couplingRate,
+          );
+          state.beamWarp = lerp(
+            state.beamWarp,
+            state.beamWarp * (0.91 + state.speedWarp * 0.11),
+            couplingRate,
+          );
           state.bloomWarp = clamp(state.bloomWarp, 0.3, 2.2);
           state.driftWarp = clamp(state.driftWarp, 0.35, 2.4);
           state.sparkWarp = clamp(state.sparkWarp, 0.4, 2.3);
@@ -2055,7 +2393,7 @@
         }
 
         function spawnRipple(x, y, hue, scale = 1) {
-          const rippleScale = scale * state.rippleWarp * 0.6;
+          const rippleScale = scale * state.rippleWarp * 0.6 * perf.rippleScale;
           ripples.push({
             x,
             y,
@@ -2067,13 +2405,15 @@
             speed: rand(1.0, 2.2) * rippleScale,
             activation: false,
           });
-          trimArray(ripples, MAX_RIPPLES);
+          trimArray(ripples, perf.maxRipples);
         }
 
         function spawnSparks(x, y, hue, count = 18, spread = 32, speed = 2.4) {
           const sparkCount = Math.max(
             1,
-            Math.round(count * (0.72 + state.sparkWarp * 0.28)),
+            Math.round(
+              count * (0.72 + state.sparkWarp * 0.28) * perf.sparksScale,
+            ),
           );
           for (let i = 0; i < sparkCount; i++) {
             const a = rand(0, TAU);
@@ -2088,10 +2428,11 @@
               size: rand(0.6, 2.8) * (0.82 + state.sparkWarp * 0.22),
             });
           }
-          trimArray(sparks, MAX_SPARKS);
+          trimArray(sparks, perf.maxSparks);
         }
 
         function spawnBeam(edge, hue) {
+          if (perf.lowPower && beams.length >= perf.maxBeams) return;
           beams.push({
             x1: edge.p1.x,
             y1: edge.p1.y,
@@ -2102,20 +2443,22 @@
             speed: rand(0.028, 0.06) * state.beamWarp,
             life: clamp(0.76 + state.beamWarp * 0.26, 0.68, 1.3),
           });
-          trimArray(beams, MAX_BEAMS);
+          trimArray(beams, perf.maxBeams);
         }
 
         function spawnPolyBurst(points, hue) {
+          if (perf.simpleFrozenTriangles) return;
           polyBursts.push({
             points: points.map((p) => ({ x: p.x, y: p.y })),
             hue,
             life: 1,
             phase: rand(0, TAU),
           });
-          trimArray(polyBursts, MAX_POLY_BURSTS);
+          trimArray(polyBursts, perf.maxPolyBursts);
         }
 
         function freezeTriangleSnapshot(tri, ts) {
+          if (perf.simpleFrozenTriangles) return;
           frozenTriangles.push({
             id: tri.id,
             points: [tri.p1, tri.p2, tri.p3].map((p) => ({ x: p.x, y: p.y })),
@@ -2130,7 +2473,7 @@
               ),
             bornAt: ts,
           });
-          trimArray(frozenTriangles, MAX_FROZEN_TRIANGLES);
+          trimArray(frozenTriangles, perf.maxFrozenTriangles);
         }
 
         function updatePointer(x, y, userDriven = true) {
@@ -2145,34 +2488,20 @@
         }
 
         function pushPointerTrail() {
+          if (!perf.drawCursorTrail || (!mouse.captured && !mouse.down)) return;
           const last = pointerTrail[pointerTrail.length - 1];
           if (
             !last ||
-            dist(last.x, last.y, mouse.x, mouse.y) > 4.8 / state.trailWarp
+            dist(last.x, last.y, mouse.x, mouse.y) >
+              (4.8 / state.trailWarp) * perf.trailStepMul
           ) {
             pointerTrail.push({ x: mouse.x, y: mouse.y, life: 1 });
-            if (pointerTrail.length > MAX_TRAIL_POINTS) pointerTrail.shift();
+            if (pointerTrail.length > perf.maxTrailPoints) pointerTrail.shift();
           }
         }
 
-        function updateGhostPointer(ts) {
-          const idle = ts - mouse.lastMove > 5000;
-          if (!mouse.captured || idle) {
-            const tx =
-              state.width *
-              (0.5 +
-                Math.cos(ts * 0.00018) * 0.23 +
-                Math.sin(ts * 0.000049) * 0.08);
-            const ty =
-              state.height *
-              (0.5 +
-                Math.sin(ts * 0.00021) * 0.2 +
-                Math.cos(ts * 0.000072) * 0.06);
-            mouse.x = lerp(mouse.x, tx, 0.014 * state.dt);
-            mouse.y = lerp(mouse.y, ty, 0.014 * state.dt);
-            mouse.normX = state.width ? mouse.x / state.width : 0.5;
-            mouse.normY = state.height ? mouse.y / state.height : 0.5;
-          }
+        function updateGhostPointer() {
+          return;
         }
 
         function updatePointerVelocity() {
@@ -2269,12 +2598,14 @@
         function pruneAudioGovernor(nowMs = performance.now()) {
           let w = 0;
           for (let r = 0; r < audio.activeCosts.length; r++) {
-            if (audio.activeCosts[r].expiresAt > nowMs) audio.activeCosts[w++] = audio.activeCosts[r];
+            if (audio.activeCosts[r].expiresAt > nowMs)
+              audio.activeCosts[w++] = audio.activeCosts[r];
           }
           audio.activeCosts.length = w;
           w = 0;
           for (let r = 0; r < audio.burstCosts.length; r++) {
-            if (audio.burstCosts[r].expiresAt > nowMs) audio.burstCosts[w++] = audio.burstCosts[r];
+            if (audio.burstCosts[r].expiresAt > nowMs)
+              audio.burstCosts[w++] = audio.burstCosts[r];
           }
           audio.burstCosts.length = w;
         }
@@ -2768,18 +3099,27 @@
           );
           const velArticulation = clamp(mouse.velocity / 14, 0, 1);
           const freq = quantizedFreq(
-            clamp(p.noteSeed * 0.5 + (1 - p.z) * 0.3 + g.scaleDegree / 26, 0, 1),
+            clamp(
+              p.noteSeed * 0.5 + (1 - p.z) * 0.3 + g.scaleDegree / 26,
+              0,
+              1,
+            ),
             clamp(Math.round(g.octave), 2, 5),
             2,
           );
           const env = audio.ctx.createGain();
           env.connect(bus.input);
           const peakGain = clamp(
-            (0.14 + state.energy * 0.04 + g.harmonics * 0.02 + velArticulation * 0.03) * (grip ? 1.18 : 1),
+            (0.14 +
+              state.energy * 0.04 +
+              g.harmonics * 0.02 +
+              velArticulation * 0.03) *
+              (grip ? 1.18 : 1),
             0.12,
             0.26,
           );
-          const articulationAttack = g.articulation * (1 - velArticulation * 0.4);
+          const articulationAttack =
+            g.articulation * (1 - velArticulation * 0.4);
           const style = g.percStyle;
           if (style === "click") {
             envPerc(env.gain, now, peakGain, 0.001, 0.04 + g.decay * 0.12);
@@ -2805,12 +3145,21 @@
             osc.type = g.wave1;
             const base = freq * (0.5 + g.pitchEnv * 0.15);
             osc.frequency.setValueAtTime(base * (2.2 + g.pitchEnv * 0.8), now);
-            osc.frequency.exponentialRampToValueAtTime(Math.max(20, base), now + 0.1);
+            osc.frequency.exponentialRampToValueAtTime(
+              Math.max(20, base),
+              now + 0.1,
+            );
             osc.connect(env);
             osc.start(now);
             osc.stop(now + 0.2);
           } else if (style === "hat") {
-            envPerc(env.gain, now, peakGain * 0.9, 0.001, 0.03 + g.decay * 0.06);
+            envPerc(
+              env.gain,
+              now,
+              peakGain * 0.9,
+              0.001,
+              0.03 + g.decay * 0.06,
+            );
             const noise = createNoiseSource("short");
             const bp = audio.ctx.createBiquadFilter();
             bp.type = "highpass";
@@ -2821,7 +3170,13 @@
             noise.start(now);
             noise.stop(now + 0.06);
           } else if (style === "snap") {
-            envPerc(env.gain, now, peakGain * 0.95, 0.001, 0.06 + g.decay * 0.08);
+            envPerc(
+              env.gain,
+              now,
+              peakGain * 0.95,
+              0.001,
+              0.06 + g.decay * 0.08,
+            );
             const tone = audio.ctx.createOscillator();
             tone.type = g.wave1;
             tone.frequency.setValueAtTime(freq * 1.8, now);
@@ -2847,8 +3202,14 @@
             carrier.frequency.setValueAtTime(freq, now);
             modOsc.type = "sine";
             modOsc.frequency.setValueAtTime(freq * g.modRatio, now);
-            modGain.gain.setValueAtTime(freq * clamp(g.modDepth, 0, 0.2) * 0.8, now);
-            modGain.gain.exponentialRampToValueAtTime(0.01, now + g.decay * 0.3);
+            modGain.gain.setValueAtTime(
+              freq * clamp(g.modDepth, 0, 0.2) * 0.8,
+              now,
+            );
+            modGain.gain.exponentialRampToValueAtTime(
+              0.01,
+              now + g.decay * 0.3,
+            );
             modOsc.connect(modGain);
             modGain.connect(carrier.frequency);
             carrier.connect(env);
@@ -2857,7 +3218,13 @@
             carrier.stop(now + 0.22);
             modOsc.stop(now + 0.22);
           } else if (style === "metallic") {
-            envPerc(env.gain, now, peakGain, 0.001 * articulationAttack, 0.08 + g.decay * 0.15);
+            envPerc(
+              env.gain,
+              now,
+              peakGain,
+              0.001 * articulationAttack,
+              0.08 + g.decay * 0.15,
+            );
             const osc = audio.ctx.createOscillator();
             osc.type = g.wave1;
             osc.frequency.setValueAtTime(freq * 2.42, now);
@@ -2876,7 +3243,13 @@
             ring.start(now);
             ring.stop(now + 0.12);
           } else if (style === "grain") {
-            envPerc(env.gain, now, peakGain * 0.88, 0.0005, 0.02 + g.decay * 0.04);
+            envPerc(
+              env.gain,
+              now,
+              peakGain * 0.88,
+              0.0005,
+              0.02 + g.decay * 0.04,
+            );
             const noise = createNoiseSource("short");
             const bp = audio.ctx.createBiquadFilter();
             bp.type = "bandpass";
@@ -2889,7 +3262,10 @@
             const micro = audio.ctx.createOscillator();
             micro.type = "sine";
             micro.frequency.setValueAtTime(freq * 1.5, now);
-            micro.frequency.exponentialRampToValueAtTime(freq * 0.8, now + 0.02);
+            micro.frequency.exponentialRampToValueAtTime(
+              freq * 0.8,
+              now + 0.02,
+            );
             const microG = audio.ctx.createGain();
             microG.gain.setValueAtTime(0.06 + g.brightness * 0.03, now);
             microG.gain.exponentialRampToValueAtTime(0.0001, now + 0.025);
@@ -2898,7 +3274,13 @@
             micro.start(now);
             micro.stop(now + 0.03);
           } else if (style === "pluck") {
-            envPerc(env.gain, now, peakGain, 0.001 * articulationAttack, 0.12 + g.decay * 0.24);
+            envPerc(
+              env.gain,
+              now,
+              peakGain,
+              0.001 * articulationAttack,
+              0.12 + g.decay * 0.24,
+            );
             const body = audio.ctx.createOscillator();
             body.type = g.wave1;
             body.frequency.setValueAtTime(freq, now);
@@ -2906,7 +3288,10 @@
             const lp = audio.ctx.createBiquadFilter();
             lp.type = "lowpass";
             lp.frequency.setValueAtTime(freq * (4 + g.brightness * 4), now);
-            lp.frequency.exponentialRampToValueAtTime(freq * 1.2, now + 0.08 + g.decay * 0.14);
+            lp.frequency.exponentialRampToValueAtTime(
+              freq * 1.2,
+              now + 0.08 + g.decay * 0.14,
+            );
             lp.Q.value = 0.5 + g.filterQ * 0.3;
             body.connect(lp);
             lp.connect(env);
@@ -2925,12 +3310,21 @@
             click.start(now);
             click.stop(now + 0.015);
           } else if (style === "breath") {
-            envPerc(env.gain, now, peakGain * 0.78, g.attack * 2 + 0.01, 0.08 + g.decay * 0.18);
+            envPerc(
+              env.gain,
+              now,
+              peakGain * 0.78,
+              g.attack * 2 + 0.01,
+              0.08 + g.decay * 0.18,
+            );
             const noise = createNoiseSource("medium");
             const bp = audio.ctx.createBiquadFilter();
             bp.type = "bandpass";
             bp.frequency.setValueAtTime(freq * 0.8, now);
-            bp.frequency.exponentialRampToValueAtTime(freq * (1.5 + g.brightness * 1.2), now + 0.04);
+            bp.frequency.exponentialRampToValueAtTime(
+              freq * (1.5 + g.brightness * 1.2),
+              now + 0.04,
+            );
             bp.frequency.exponentialRampToValueAtTime(freq * 0.6, now + 0.1);
             bp.Q.value = 1.5 + g.filterQ * 1.5;
             noise.connect(bp);
@@ -2942,13 +3336,22 @@
             whisper.frequency.setValueAtTime(freq, now);
             const whisperG = audio.ctx.createGain();
             whisperG.gain.setValueAtTime(0.03, now);
-            whisperG.gain.exponentialRampToValueAtTime(0.0001, now + 0.06 + g.decay * 0.1);
+            whisperG.gain.exponentialRampToValueAtTime(
+              0.0001,
+              now + 0.06 + g.decay * 0.1,
+            );
             whisper.connect(whisperG);
             whisperG.connect(env);
             whisper.start(now);
             whisper.stop(now + 0.1 + g.decay * 0.1);
           } else {
-            envPerc(env.gain, now, peakGain * 0.85, 0.001, 0.04 + g.decay * 0.1);
+            envPerc(
+              env.gain,
+              now,
+              peakGain * 0.85,
+              0.001,
+              0.04 + g.decay * 0.1,
+            );
             const noise = createNoiseSource("short");
             const filt = audio.ctx.createBiquadFilter();
             filt.type = g.filterType;
@@ -2972,10 +3375,13 @@
           const norm = clamp(1 - edge.distance / edge.maxDistance, 0, 1);
           const pan = clamp((edge.mx / state.width) * 2 - 1, -1, 1);
           const degreeNorm = clamp(
-            g.scaleDegree / 13 * 0.5 + norm * 0.3 + (1 - edge.avgZ) * 0.2, 0, 1,
+            (g.scaleDegree / 13) * 0.5 + norm * 0.3 + (1 - edge.avgZ) * 0.2,
+            0,
+            1,
           );
-          const freq = quantizedFreq(degreeNorm, clamp(Math.round(g.octave), 2, 4), 3)
-            * instrument.pitchMul;
+          const freq =
+            quantizedFreq(degreeNorm, clamp(Math.round(g.octave), 2, 4), 3) *
+            instrument.pitchMul;
           const bus = createVoiceBus(
             pan,
             (0.12 + norm * 0.14 + progress * 0.05) * state.wet,
@@ -2986,14 +3392,28 @@
           const velFactor = clamp(mouse.velocity / 14, 0, 1);
           const env = audio.ctx.createGain();
           env.connect(bus.input);
-          const release = (0.28 + g.decay * 0.8 + norm * 0.4 + progress * 0.2) * (grip ? 0.88 : 1);
-          envPerc(env.gain, now, clamp((0.12 + norm * 0.04) * (grip ? 1.16 : 1), 0.12, 0.21),
-            g.attack * (grip ? 0.35 : 0.5) + 0.002, release);
+          const release =
+            (0.28 + g.decay * 0.8 + norm * 0.4 + progress * 0.2) *
+            (grip ? 0.88 : 1);
+          envPerc(
+            env.gain,
+            now,
+            clamp((0.12 + norm * 0.04) * (grip ? 1.16 : 1), 0.12, 0.21),
+            g.attack * (grip ? 0.35 : 0.5) + 0.002,
+            release,
+          );
           const filter = audio.ctx.createBiquadFilter();
           filter.type = g.filterType;
-          const fBase = clamp(freq * (1.5 + g.filterFreq * 6) * instrument.filterMul, 80, 12000);
+          const fBase = clamp(
+            freq * (1.5 + g.filterFreq * 6) * instrument.filterMul,
+            80,
+            12000,
+          );
           filter.frequency.setValueAtTime(fBase * 1.8, now);
-          filter.frequency.exponentialRampToValueAtTime(fBase * 0.4, now + release * 0.7);
+          filter.frequency.exponentialRampToValueAtTime(
+            fBase * 0.4,
+            now + release * 0.7,
+          );
           filter.Q.setValueAtTime(0.5 + g.filterQ * 0.4, now);
           filter.connect(env);
           const osc1 = audio.ctx.createOscillator();
@@ -3005,7 +3425,10 @@
           osc1.stop(now + release + 0.1);
           const osc2 = audio.ctx.createOscillator();
           osc2.type = g.wave2;
-          osc2.frequency.setValueAtTime(freq * (g.harmonics > 0.5 ? 2 : 1), now);
+          osc2.frequency.setValueAtTime(
+            freq * (g.harmonics > 0.5 ? 2 : 1),
+            now,
+          );
           osc2.detune.setValueAtTime(g.detune, now);
           const g2 = audio.ctx.createGain();
           g2.gain.value = 0.15 + g.harmonics * 0.1;
@@ -3018,8 +3441,14 @@
             const modGain = audio.ctx.createGain();
             modOsc.type = "sine";
             modOsc.frequency.setValueAtTime(freq * g.modRatio, now);
-            modGain.gain.setValueAtTime(freq * clamp(g.modDepth, 0, 0.2) * 0.5, now);
-            modGain.gain.exponentialRampToValueAtTime(0.01, now + release * 0.6);
+            modGain.gain.setValueAtTime(
+              freq * clamp(g.modDepth, 0, 0.2) * 0.5,
+              now,
+            );
+            modGain.gain.exponentialRampToValueAtTime(
+              0.01,
+              now + release * 0.6,
+            );
             modOsc.connect(modGain);
             modGain.connect(osc1.frequency);
             modOsc.start(now);
@@ -3110,12 +3539,20 @@
           const instrument = currentInstrument();
           const now = audio.ctx.currentTime;
           const pan = clamp((tri.cx / state.width) * 2 - 1, -1, 1);
-          const root = quantizedFreq(
-            clamp(g.scaleDegree / 13 * 0.42 + (1 - tri.avgZ) * 0.34 + rand(-0.05, 0.05), 0, 1),
-            1,
-            2,
-          ) * instrument.bassSubMul;
-          const freq = (Math.random() < 0.45 ? root * 0.5 : root) * instrument.pitchMul;
+          const root =
+            quantizedFreq(
+              clamp(
+                (g.scaleDegree / 13) * 0.42 +
+                  (1 - tri.avgZ) * 0.34 +
+                  rand(-0.05, 0.05),
+                0,
+                1,
+              ),
+              1,
+              2,
+            ) * instrument.bassSubMul;
+          const freq =
+            (Math.random() < 0.45 ? root * 0.5 : root) * instrument.pitchMul;
           const bus = createVoiceBus(
             pan,
             (0.08 + progress * 0.05) * state.wet,
@@ -3125,11 +3562,21 @@
           );
           const env = audio.ctx.createGain();
           env.connect(bus.input);
-          envPad(env.gain, now, 0.15 + g.harmonics * 0.03, g.attack * 0.35 + 0.006, 0.04, 0.42 + progress * 0.18);
+          envPad(
+            env.gain,
+            now,
+            0.15 + g.harmonics * 0.03,
+            g.attack * 0.35 + 0.006,
+            0.04,
+            0.42 + progress * 0.18,
+          );
           const filter = audio.ctx.createBiquadFilter();
           filter.type = "lowpass";
           filter.frequency.setValueAtTime(130 + g.filterFreq * 120, now);
-          filter.frequency.exponentialRampToValueAtTime(420 + g.filterFreq * 260 + progress * 220, now + 0.24);
+          filter.frequency.exponentialRampToValueAtTime(
+            420 + g.filterFreq * 260 + progress * 220,
+            now + 0.24,
+          );
           filter.Q.value = 0.8 + g.filterQ * 0.2;
           filter.connect(env);
           const sub = audio.ctx.createOscillator();
@@ -3544,7 +3991,11 @@
           }
         }
 
-        function triggerTriangleSound(tri, progress, interactionMode = "touch") {
+        function triggerTriangleSound(
+          tri,
+          progress,
+          interactionMode = "touch",
+        ) {
           if (!audio.ready || state.muted) return;
           const permit = reserveAudioBudget("triangle", 5.8, 2800, 128);
           if (!permit) return;
@@ -3557,11 +4008,20 @@
           const now = audio.ctx.currentTime;
           const pan = clamp((tri.cx / state.width) * 2 - 1, -1, 1);
           const areaNorm = clamp(
-            tri.area / (state.connectionDistance * state.connectionDistance), 0, 1,
+            tri.area / (state.connectionDistance * state.connectionDistance),
+            0,
+            1,
           );
           const degreeBase = Math.floor(
-            clamp(g.scaleDegree / 13 * 0.4 + (1 - tri.avgZ) * 0.3 + areaNorm * 0.3, 0, 0.999)
-            * currentScale().intervals.length * 2.5,
+            clamp(
+              (g.scaleDegree / 13) * 0.4 +
+                (1 - tri.avgZ) * 0.3 +
+                areaNorm * 0.3,
+              0,
+              0.999,
+            ) *
+              currentScale().intervals.length *
+              2.5,
           );
           const chordSteps = grip
             ? [0, 2]
@@ -3570,11 +4030,17 @@
               : g.harmonics > 0.3
                 ? [0, 2, 4]
                 : [0, 3];
-          if (!grip && instrument.rarity === "rare" && Math.random() < 0.6) chordSteps.push(7);
+          if (!grip && instrument.rarity === "rare" && Math.random() < 0.6)
+            chordSteps.push(7);
           const octaveBase = clamp(Math.round(g.octave) - (grip ? 2 : 1), 1, 3);
-          const notes = chordSteps.map((step, idx) =>
-            midiToFreq(midiFromScaleDegree(degreeBase + step,
-              idx > 1 ? octaveBase + 1 : octaveBase)) * instrument.pitchMul,
+          const notes = chordSteps.map(
+            (step, idx) =>
+              midiToFreq(
+                midiFromScaleDegree(
+                  degreeBase + step,
+                  idx > 1 ? octaveBase + 1 : octaveBase,
+                ),
+              ) * instrument.pitchMul,
           );
           const bus = createVoiceBus(
             pan,
@@ -3585,22 +4051,35 @@
           );
           const masterEnv = audio.ctx.createGain();
           masterEnv.connect(bus.input);
-          const release = (0.35 + g.decay * 0.5 + areaNorm * 0.25 + progress * 0.15)
-            * instrument.triangleReleaseMul
-            * (grip ? 0.82 : 1);
-          envPad(masterEnv.gain, now,
+          const release =
+            (0.35 + g.decay * 0.5 + areaNorm * 0.25 + progress * 0.15) *
+            instrument.triangleReleaseMul *
+            (grip ? 0.82 : 1);
+          envPad(
+            masterEnv.gain,
+            now,
             clamp((0.08 + areaNorm * 0.03) * (grip ? 1.2 : 1), 0.08, 0.16),
-            g.attack * 0.4 + 0.01, grip ? 0.06 : 0.1, release);
+            g.attack * 0.4 + 0.01,
+            grip ? 0.06 : 0.1,
+            release,
+          );
           const filter = audio.ctx.createBiquadFilter();
           filter.type = g.filterType === "highpass" ? "bandpass" : g.filterType;
           const fCutoff = clamp(
-            (200 + g.filterFreq * 2400 + areaNorm * 1600 + progress * 1800) * (grip ? 0.58 : 1),
+            (200 + g.filterFreq * 2400 + areaNorm * 1600 + progress * 1800) *
+              (grip ? 0.58 : 1),
             80,
             8000,
           );
           filter.frequency.setValueAtTime(fCutoff * 0.4, now);
-          filter.frequency.exponentialRampToValueAtTime(fCutoff, now + g.attack + 0.08);
-          filter.frequency.exponentialRampToValueAtTime(fCutoff * 0.3, now + release * 0.8);
+          filter.frequency.exponentialRampToValueAtTime(
+            fCutoff,
+            now + g.attack + 0.08,
+          );
+          filter.frequency.exponentialRampToValueAtTime(
+            fCutoff * 0.3,
+            now + release * 0.8,
+          );
           filter.Q.setValueAtTime(0.3 + g.filterQ * 0.3, now);
           filter.connect(masterEnv);
           const perNote = (grip ? 0.62 : 0.55) / notes.length;
@@ -3647,8 +4126,13 @@
             shimmerFilter.frequency.value = 2400 + g.filterFreq * 3000;
             shimmerGain.gain.setValueAtTime(0.0001, now);
             shimmerGain.gain.exponentialRampToValueAtTime(
-              clamp(g.noiseAmt, 0, 0.2) * 0.018 * instrument.shimmerMul, now + 0.05);
-            shimmerGain.gain.exponentialRampToValueAtTime(0.0001, now + release * 0.7);
+              clamp(g.noiseAmt, 0, 0.2) * 0.018 * instrument.shimmerMul,
+              now + 0.05,
+            );
+            shimmerGain.gain.exponentialRampToValueAtTime(
+              0.0001,
+              now + release * 0.7,
+            );
             shimmer.connect(shimmerFilter);
             shimmerFilter.connect(shimmerGain);
             shimmerGain.connect(masterEnv);
@@ -3829,7 +4313,8 @@
           const gravMul = 0.0000055 * state.gravityWarp;
           const centerX = state.width * 0.5;
           const centerY = state.height * 0.5;
-          const mx = mouse.x, my = mouse.y;
+          const mx = mouse.x,
+            my = mouse.y;
           const mouseIsDown = mouse.down;
           const flashDecay = (0.036 * dt) / state.flashWarp;
           const glitchDecay = (0.042 * dt) / state.flashWarp;
@@ -3840,10 +4325,14 @@
           for (let pi = 0; pi < particles.length; pi++) {
             const p = particles[pi];
             if (p.satellite) {
-              p.satelliteAngle += p.satelliteSpin * dt * (1 + state.energy * 0.2);
-              const orbitR = p.satelliteRadius * (1 + Math.sin(ts * 0.0012 + p.seed) * 0.04);
+              p.satelliteAngle +=
+                p.satelliteSpin * dt * (1 + state.energy * 0.2);
+              const orbitR =
+                p.satelliteRadius * (1 + Math.sin(ts * 0.0012 + p.seed) * 0.04);
               const tx = mx + Math.cos(p.satelliteAngle) * orbitR;
-              const ty = my + Math.sin(p.satelliteAngle) * orbitR * (0.92 + p.satelliteLift);
+              const ty =
+                my +
+                Math.sin(p.satelliteAngle) * orbitR * (0.92 + p.satelliteLift);
               p.x = lerp(p.x, tx, 0.28 * dt);
               p.y = lerp(p.y, ty, 0.28 * dt);
               p.vx = (tx - p.x) * 0.8;
@@ -3904,9 +4393,11 @@
             p.vy *= damping;
 
             const maxSpeed = (baseMaxSpeed + (1 - p.z) * 0.9) * speedMul;
-            const vxSq = p.vx * p.vx, vySq = p.vy * p.vy;
+            const vxSq = p.vx * p.vx,
+              vySq = p.vy * p.vy;
             const speedSq = vxSq + vySq;
-            const speed = speedSq > maxSpeed * maxSpeed ? Math.sqrt(speedSq) : 0;
+            const speed =
+              speedSq > maxSpeed * maxSpeed ? Math.sqrt(speedSq) : 0;
             if (speed > 0) {
               p.vx = (p.vx / speed) * maxSpeed;
               p.vy = (p.vy / speed) * maxSpeed;
@@ -3960,6 +4451,77 @@
           }
         }
 
+        const particleGrid = {
+          cellSize: 1,
+          cols: 1,
+          rows: 1,
+          buckets: new Map(),
+        };
+
+        function particleGridKey(cx, cy) {
+          return `${cx},${cy}`;
+        }
+
+        function buildParticleGrid() {
+          const cellSize = Math.max(40, state.connectionDistance * 0.72);
+          particleGrid.cellSize = cellSize;
+          particleGrid.cols = Math.max(1, Math.ceil(state.width / cellSize));
+          particleGrid.rows = Math.max(1, Math.ceil(state.height / cellSize));
+          particleGrid.buckets.clear();
+          for (let i = 0; i < particles.length; i++) {
+            const p = particles[i];
+            if (p.satellite) continue;
+            const cx = clamp(
+              Math.floor(p.x / cellSize),
+              0,
+              particleGrid.cols - 1,
+            );
+            const cy = clamp(
+              Math.floor(p.y / cellSize),
+              0,
+              particleGrid.rows - 1,
+            );
+            const key = particleGridKey(cx, cy);
+            let bucket = particleGrid.buckets.get(key);
+            if (!bucket) {
+              bucket = [];
+              particleGrid.buckets.set(key, bucket);
+            }
+            bucket.push(p);
+          }
+        }
+
+        function forEachNearbyParticle(x, y, radius, visit) {
+          const cellSize = particleGrid.cellSize;
+          const minX = clamp(
+            Math.floor((x - radius) / cellSize),
+            0,
+            particleGrid.cols - 1,
+          );
+          const maxX = clamp(
+            Math.floor((x + radius) / cellSize),
+            0,
+            particleGrid.cols - 1,
+          );
+          const minY = clamp(
+            Math.floor((y - radius) / cellSize),
+            0,
+            particleGrid.rows - 1,
+          );
+          const maxY = clamp(
+            Math.floor((y + radius) / cellSize),
+            0,
+            particleGrid.rows - 1,
+          );
+          for (let cy = minY; cy <= maxY; cy++) {
+            for (let cx = minX; cx <= maxX; cx++) {
+              const bucket = particleGrid.buckets.get(particleGridKey(cx, cy));
+              if (!bucket) continue;
+              for (let i = 0; i < bucket.length; i++) visit(bucket[i]);
+            }
+          }
+        }
+
         const MAX_EDGES_PER_NODE = 3;
         const _edgeBonds = new Map();
         const _visibleEdgeIds = new Set();
@@ -3973,52 +4535,74 @@
           const energyAlpha = 0.78 + state.energy * 0.24;
           const hueOff = state.hueShift * 0.18;
           const edgeCount = new Map();
-          for (let i = 0; i < particles.length; i++) edgeCount.set(particles[i].id, 0);
+          for (let i = 0; i < particles.length; i++)
+            edgeCount.set(particles[i].id, 0);
           const candidates = [];
           const prevBonds = _edgeBonds;
           _edgeBonds.clear();
           for (let i = 0; i < particles.length; i++) {
             const p1 = particles[i];
             if (p1.satellite) continue;
-            const p1x = p1.x, p1y = p1.y;
-            for (let j = i + 1; j < particles.length; j++) {
-              const p2 = particles[j];
-              if (p2.satellite) continue;
+            const p1x = p1.x,
+              p1y = p1.y;
+            forEachNearbyParticle(p1x, p1y, breakMax, (p2) => {
+              if (p2 === p1 || p2.satellite || p2.id <= p1.id) return;
               const dx = p2.x - p1x;
               const dy = p2.y - p1y;
               const dSq = dx * dx + dy * dy;
-              if (dSq < 1.44) continue;
+              if (dSq < 1.44) return;
               const id1 = p1.id < p2.id ? p1.id : p2.id;
               const id2 = p1.id < p2.id ? p2.id : p1.id;
               const bondKey = id1 * 100000 + id2;
               const wasBonded = prevBonds.has(bondKey);
               const limit = wasBonded ? breakMaxSq : baseMaxSq;
-              if (dSq > limit) continue;
+              if (dSq > limit) return;
               const avgZ = (p1.z + p2.z) * 0.5;
               const localMax = baseMax * (1.18 - avgZ * 0.32);
-              const localLimitSq = wasBonded ? (localMax * 1.35) * (localMax * 1.35) : localMax * localMax;
-              if (dSq > localLimitSq) continue;
+              const localLimitSq = wasBonded
+                ? localMax * 1.35 * (localMax * 1.35)
+                : localMax * localMax;
+              if (dSq > localLimitSq) return;
               const d = Math.sqrt(dSq);
               const effectiveMax = wasBonded ? localMax * 1.35 : localMax;
               const strength = clamp(1 - d / effectiveMax, 0, 1);
               candidates.push({
-                p1, p2, id1, id2, bondKey, d, strength, avgZ, wasBonded,
+                p1,
+                p2,
+                id1,
+                id2,
+                bondKey,
+                d,
+                strength,
+                avgZ,
+                wasBonded,
                 alpha: strength * (0.24 + (1 - avgZ) * 0.58) * energyAlpha,
                 hue: mod((p1.hue + p2.hue) * 0.5 + hueOff, 360),
               });
-            }
+            });
           }
           candidates.sort((a, b) => {
             const aBias = a.wasBonded ? -0.15 : 0;
             const bBias = b.wasBonded ? -0.15 : 0;
-            return (a.d / (a.wasBonded ? a.p1.z + a.p2.z + 1.35 : a.p1.z + a.p2.z + 1.18) + aBias) -
-                   (b.d / (b.wasBonded ? b.p1.z + b.p2.z + 1.35 : b.p1.z + b.p2.z + 1.18) + bBias);
+            return (
+              a.d /
+                (a.wasBonded
+                  ? a.p1.z + a.p2.z + 1.35
+                  : a.p1.z + a.p2.z + 1.18) +
+              aBias -
+              (b.d /
+                (b.wasBonded
+                  ? b.p1.z + b.p2.z + 1.35
+                  : b.p1.z + b.p2.z + 1.18) +
+                bBias)
+            );
           });
           for (let i = 0; i < candidates.length; i++) {
             const c = candidates[i];
             const cnt1 = edgeCount.get(c.p1.id) || 0;
             const cnt2 = edgeCount.get(c.p2.id) || 0;
-            if (cnt1 >= MAX_EDGES_PER_NODE && cnt2 >= MAX_EDGES_PER_NODE) continue;
+            if (cnt1 >= MAX_EDGES_PER_NODE && cnt2 >= MAX_EDGES_PER_NODE)
+              continue;
             if (cnt1 >= MAX_EDGES_PER_NODE || cnt2 >= MAX_EDGES_PER_NODE) {
               if (!c.wasBonded) continue;
             }
@@ -4032,7 +4616,9 @@
               p2: c.p2,
               id: edgeId,
               distance: c.d,
-              maxDistance: c.wasBonded ? c.d / clamp(1 - c.strength, 0.01, 1) : c.d / clamp(1 - c.strength, 0.01, 1),
+              maxDistance: c.wasBonded
+                ? c.d / clamp(1 - c.strength, 0.01, 1)
+                : c.d / clamp(1 - c.strength, 0.01, 1),
               alpha: c.alpha,
               hue: c.hue,
               avgZ: c.avgZ,
@@ -4045,19 +4631,25 @@
         const _nearbyBuf = [];
         function computeCursorTriangles() {
           cursorTriangles.length = 0;
+          if (!mouse.captured && !mouse.down) return;
           const radius = state.connectionDistance * 0.9;
           const radiusSq = radius * radius;
-          const mx = mouse.x, my = mouse.y;
+          const mx = mouse.x,
+            my = mouse.y;
           _nearbyBuf.length = 0;
-          for (let i = 0; i < particles.length; i++) {
-            const p = particles[i];
-            if (p.satellite) continue;
-            const dx = p.x - mx, dy = p.y - my;
+          forEachNearbyParticle(mx, my, radius, (p) => {
+            const dx = p.x - mx;
+            const dy = p.y - my;
             const dSq = dx * dx + dy * dy;
             if (dSq < radiusSq) _nearbyBuf.push({ p, d: Math.sqrt(dSq) });
+          });
+          if (_nearbyBuf.length > 14) {
+            _nearbyBuf.sort((a, b) => a.d - b.d);
+            _nearbyBuf.length = 9;
+          } else {
+            _nearbyBuf.sort((a, b) => a.d - b.d);
+            if (_nearbyBuf.length > 9) _nearbyBuf.length = 9;
           }
-          _nearbyBuf.sort((a, b) => a.d - b.d);
-          if (_nearbyBuf.length > 9) _nearbyBuf.length = 9;
           const nearby = _nearbyBuf;
 
           const connLimit = state.connectionDistance * 0.96;
@@ -4072,11 +4664,7 @@
                 const dbc = dist(b.x, b.y, c.x, c.y);
                 const dca = dist(c.x, c.y, a.x, a.y);
 
-                if (
-                  dab > connLimit ||
-                  dbc > connLimit ||
-                  dca > connLimit
-                )
+                if (dab > connLimit || dbc > connLimit || dca > connLimit)
                   continue;
 
                 const abId = `l-${Math.min(a.id, b.id)}-${Math.max(a.id, b.id)}`;
@@ -4138,18 +4726,32 @@
           if (candidate.type === "particle") {
             const p = candidate.p;
             p.flash = Math.max(p.flash, interactionMode === "grip" ? 1 : 0.95);
-            p.glitch = Math.max(p.glitch, interactionMode === "grip" ? 0.96 : 0.82);
-            spawnRipple(p.x, p.y, p.hue, interactionMode === "grip" ? 1.2 : 0.95);
+            p.glitch = Math.max(
+              p.glitch,
+              interactionMode === "grip" ? 0.96 : 0.82,
+            );
+            spawnRipple(
+              p.x,
+              p.y,
+              p.hue,
+              interactionMode === "grip" ? 1.2 : 0.95,
+            );
             spawnSparks(
               p.x,
               p.y,
               p.hue,
-              12 + Math.floor(state.energy * 10) + (interactionMode === "grip" ? 6 : 0),
+              12 +
+                Math.floor(state.energy * 10) +
+                (interactionMode === "grip" ? 6 : 0),
               32,
               2.8 + state.energy * 0.9 + (interactionMode === "grip" ? 0.8 : 0),
             );
             triggerParticleSound(p, progress, interactionMode);
-            state.audioBloom = clamp(state.audioBloom + (interactionMode === "grip" ? 0.09 : 0.06), 0, 0.85);
+            state.audioBloom = clamp(
+              state.audioBloom + (interactionMode === "grip" ? 0.09 : 0.06),
+              0,
+              0.85,
+            );
             rememberComboEvent("particle", ts, {
               id: `p-${p.id}`,
               x: p.x,
@@ -4161,22 +4763,45 @@
             recordTrigger("particle", `p-${p.id}`, ts);
           } else if (candidate.type === "line") {
             const e = candidate.edge;
-            e.p1.flash = Math.max(e.p1.flash, interactionMode === "grip" ? 0.8 : 0.65);
-            e.p2.flash = Math.max(e.p2.flash, interactionMode === "grip" ? 0.8 : 0.65);
-            e.p1.glitch = Math.max(e.p1.glitch, interactionMode === "grip" ? 0.72 : 0.48);
-            e.p2.glitch = Math.max(e.p2.glitch, interactionMode === "grip" ? 0.72 : 0.48);
+            e.p1.flash = Math.max(
+              e.p1.flash,
+              interactionMode === "grip" ? 0.8 : 0.65,
+            );
+            e.p2.flash = Math.max(
+              e.p2.flash,
+              interactionMode === "grip" ? 0.8 : 0.65,
+            );
+            e.p1.glitch = Math.max(
+              e.p1.glitch,
+              interactionMode === "grip" ? 0.72 : 0.48,
+            );
+            e.p2.glitch = Math.max(
+              e.p2.glitch,
+              interactionMode === "grip" ? 0.72 : 0.48,
+            );
             spawnBeam(e, e.hue + (interactionMode === "grip" ? 20 : 0));
-            spawnRipple(e.mx, e.my, e.hue, interactionMode === "grip" ? 1.35 : 1.15);
+            spawnRipple(
+              e.mx,
+              e.my,
+              e.hue,
+              interactionMode === "grip" ? 1.35 : 1.15,
+            );
             spawnSparks(
               e.mx,
               e.my,
               e.hue,
-              16 + Math.floor(state.energy * 8) + (interactionMode === "grip" ? 8 : 0),
+              16 +
+                Math.floor(state.energy * 8) +
+                (interactionMode === "grip" ? 8 : 0),
               44,
               2.9 + state.energy * 1.0 + (interactionMode === "grip" ? 0.8 : 0),
             );
             triggerLineSound(e, progress, interactionMode);
-            state.audioBloom = clamp(state.audioBloom + (interactionMode === "grip" ? 0.13 : 0.09), 0, 0.85);
+            state.audioBloom = clamp(
+              state.audioBloom + (interactionMode === "grip" ? 0.13 : 0.09),
+              0,
+              0.85,
+            );
             rememberComboEvent("line", ts, {
               id: e.id,
               x: e.mx,
@@ -4188,24 +4813,41 @@
           } else if (candidate.type === "triangle") {
             const t = candidate.tri;
             for (const p of [t.p1, t.p2, t.p3]) {
-              p.flash = Math.max(p.flash, interactionMode === "grip" ? 1 : 0.88);
-              p.glitch = Math.max(p.glitch, interactionMode === "grip" ? 0.86 : 0.7);
+              p.flash = Math.max(
+                p.flash,
+                interactionMode === "grip" ? 1 : 0.88,
+              );
+              p.glitch = Math.max(
+                p.glitch,
+                interactionMode === "grip" ? 0.86 : 0.7,
+              );
             }
             spawnPolyBurst([t.p1, t.p2, t.p3], t.avgHue);
             freezeTriangleSnapshot(t, ts);
-            spawnRipple(t.cx, t.cy, t.avgHue, interactionMode === "grip" ? 2.2 : 1.9);
+            spawnRipple(
+              t.cx,
+              t.cy,
+              t.avgHue,
+              interactionMode === "grip" ? 2.2 : 1.9,
+            );
             spawnSparks(
               t.cx,
               t.cy,
               t.avgHue,
-              28 + Math.floor(state.energy * 12) + (interactionMode === "grip" ? 10 : 0),
+              28 +
+                Math.floor(state.energy * 12) +
+                (interactionMode === "grip" ? 10 : 0),
               70,
               3.5 + state.energy * 1.2 + (interactionMode === "grip" ? 0.8 : 0),
             );
             triggerTriangleSound(t, progress, interactionMode);
             if (interactionMode === "grip") chargeTriangleGrip(t, ts);
             else growWorldFromTriangle(t, ts);
-            state.audioBloom = clamp(state.audioBloom + (interactionMode === "grip" ? 0.2 : 0.14), 0, 0.85);
+            state.audioBloom = clamp(
+              state.audioBloom + (interactionMode === "grip" ? 0.2 : 0.14),
+              0,
+              0.85,
+            );
             rememberComboEvent("triangle", ts, {
               id: t.id,
               x: t.cx,
@@ -4420,15 +5062,21 @@
         }
 
         function checkProximityAndTrigger(progress, ts) {
+          if (!mouse.captured && !mouse.down) {
+            state.hoverItem = null;
+            return;
+          }
           let bestParticle = null;
           let bestLine = null;
           let bestTriangle = null;
-          const mx = mouse.x, my = mouse.y;
+          const mx = mouse.x,
+            my = mouse.y;
 
           for (let i = 0; i < particles.length; i++) {
             const p = particles[i];
             if (p.satellite) continue;
-            const dx = p.x - mx, dy = p.y - my;
+            const dx = p.x - mx,
+              dy = p.y - my;
             const threshold = p.currentRadius + 24;
             const dSq = dx * dx + dy * dy;
             const threshSq = threshold * threshold;
@@ -4451,7 +5099,8 @@
           const activeRadiusSq = activeRadius * activeRadius;
           for (let i = 0; i < edges.length; i++) {
             const edge = edges[i];
-            const edx = edge.mx - mx, edy = edge.my - my;
+            const edx = edge.mx - mx,
+              edy = edge.my - my;
             if (edx * edx + edy * edy > activeRadiusSq) continue;
             const d = distToSegment(
               mx,
@@ -4552,12 +5201,19 @@
           const events = comboState.events;
           const rules = comboState.rules;
 
-          const maxWindow = Math.max(
-            rules.chainWindowMs, rules.prismWindowMs, rules.rakeWindowMs,
-            rules.echoWindowMs, rules.gateWindowMs, rules.crownWindowMs,
-            rules.weaveWindowMs, rules.monolithWindowMs, rules.relicWindowMs,
-            rules.bloomlockWindowMs
-          ) * comboWindowScale;
+          const maxWindow =
+            Math.max(
+              rules.chainWindowMs,
+              rules.prismWindowMs,
+              rules.rakeWindowMs,
+              rules.echoWindowMs,
+              rules.gateWindowMs,
+              rules.crownWindowMs,
+              rules.weaveWindowMs,
+              rules.monolithWindowMs,
+              rules.relicWindowMs,
+              rules.bloomlockWindowMs,
+            ) * comboWindowScale;
           let recentStart = events.length;
           for (let i = events.length - 1; i >= 0; i--) {
             if (ts - events[i].ts >= maxWindow) break;
@@ -4594,7 +5250,11 @@
           const prismCutoff = rules.prismWindowMs * comboWindowScale;
           const prismEvents = [];
           for (let i = recent.length - 1; i >= 0; i--) {
-            if (recent[i].kind === "particle" && ts - recent[i].ts < prismCutoff) prismEvents.push(recent[i]);
+            if (
+              recent[i].kind === "particle" &&
+              ts - recent[i].ts < prismCutoff
+            )
+              prismEvents.push(recent[i]);
           }
           const prismFamilies = [];
           for (let i = prismEvents.length - 1; i >= 0; i--) {
@@ -4618,7 +5278,8 @@
           const rakeCutoff = rules.rakeWindowMs * comboWindowScale;
           const rakeEvents = [];
           for (let i = recent.length - 1; i >= 0; i--) {
-            if (recent[i].kind === "cross" && ts - recent[i].ts < rakeCutoff) rakeEvents.push(recent[i]);
+            if (recent[i].kind === "cross" && ts - recent[i].ts < rakeCutoff)
+              rakeEvents.push(recent[i]);
           }
           const uniqueCrosses = [];
           for (let i = rakeEvents.length - 1; i >= 0; i--) {
@@ -4638,7 +5299,8 @@
           const echoCutoff = rules.echoWindowMs * comboWindowScale;
           const impulseEvents = [];
           for (let i = recent.length - 1; i >= 0; i--) {
-            if (recent[i].kind === "impulse" && ts - recent[i].ts < echoCutoff) impulseEvents.push(recent[i]);
+            if (recent[i].kind === "impulse" && ts - recent[i].ts < echoCutoff)
+              impulseEvents.push(recent[i]);
           }
           if (impulseEvents.length >= 2 && comboReady("echo", ts, 980)) {
             const center = comboCentroid(impulseEvents.slice(-2));
@@ -4773,7 +5435,8 @@
           const monolithCutoff = rules.monolithWindowMs * comboWindowScale;
           const monolithEvents = [];
           for (let i = recent.length - 1; i >= 0; i--) {
-            if (recent[i].kind === "bass" && ts - recent[i].ts < monolithCutoff) monolithEvents.push(recent[i]);
+            if (recent[i].kind === "bass" && ts - recent[i].ts < monolithCutoff)
+              monolithEvents.push(recent[i]);
           }
           const monolithBass = [];
           for (let i = monolithEvents.length - 1; i >= 0; i--) {
@@ -4830,11 +5493,13 @@
           }
 
           const relicCutoff = rules.relicWindowMs * comboWindowScale;
-          let relicHalo = null, relicSiege = null;
+          let relicHalo = null,
+            relicSiege = null;
           for (let i = recent.length - 1; i >= 0; i--) {
             if (ts - recent[i].ts >= relicCutoff) continue;
             if (!relicHalo && recent[i].kind === "halo") relicHalo = recent[i];
-            if (!relicSiege && recent[i].kind === "siege") relicSiege = recent[i];
+            if (!relicSiege && recent[i].kind === "siege")
+              relicSiege = recent[i];
             if (relicHalo && relicSiege) break;
           }
           if (relicHalo && relicSiege && comboReady("relic", ts, 1800)) {
@@ -4853,12 +5518,16 @@
           }
 
           const bloomCutoff = rules.bloomlockWindowMs * comboWindowScale;
-          let bloomChain = null, bloomHalo = null, bloomTriangle = null;
+          let bloomChain = null,
+            bloomHalo = null,
+            bloomTriangle = null;
           for (let i = recent.length - 1; i >= 0; i--) {
             if (ts - recent[i].ts >= bloomCutoff) continue;
-            if (!bloomChain && recent[i].kind === "chain") bloomChain = recent[i];
+            if (!bloomChain && recent[i].kind === "chain")
+              bloomChain = recent[i];
             if (!bloomHalo && recent[i].kind === "halo") bloomHalo = recent[i];
-            if (!bloomTriangle && recent[i].kind === "triangle") bloomTriangle = recent[i];
+            if (!bloomTriangle && recent[i].kind === "triangle")
+              bloomTriangle = recent[i];
             if (bloomChain && bloomHalo && bloomTriangle) break;
           }
           if (
@@ -4897,20 +5566,9 @@
           state.lastHarmonyChange = ts;
           state.harmonyIntervalMs = rand(38000, 62000);
 
-          spawnRipple(
-            state.width * rand(0.28, 0.72),
-            state.height * rand(0.28, 0.72),
-            state.hueShift + 110,
-            2.3,
-          );
-          spawnSparks(
-            state.width * 0.5,
-            state.height * 0.5,
-            state.hueShift + 110,
-            34,
-            100,
-            3.3,
-          );
+          const anchor = worldEventAnchor();
+          spawnRipple(anchor.x, anchor.y, state.hueShift + 110, 2.3);
+          spawnSparks(anchor.x, anchor.y, state.hueShift + 110, 34, 100, 3.3);
           // Harmony shifts stay visual only to preserve headroom for direct interaction
           updateAudioSettings(progress);
         }
@@ -4932,12 +5590,14 @@
             r.r += r.speed * dt * energyBoost;
             r.life -= (r.activation ? 0.01 : 0.015) * dt;
             if (r.activation && r.triggered) {
-              for (let j = 0; j < particles.length; j++) {
-                const p = particles[j];
-                if (r.triggered.has(p.id)) continue;
+              forEachNearbyParticle(r.x, r.y, r.r + 24, (p) => {
+                if (r.triggered.has(p.id)) return;
                 const d = dist(r.x, r.y, p.x, p.y);
-                const threshold = Math.max(6, p.currentRadius + r.thickness * 0.8);
-                if (d + threshold < r.prevR || d - threshold > r.r) continue;
+                const threshold = Math.max(
+                  6,
+                  p.currentRadius + r.thickness * 0.8,
+                );
+                if (d + threshold < r.prevR || d - threshold > r.r) return;
                 r.triggered.add(p.id);
                 p.flash = Math.max(p.flash, 0.92);
                 p.glitch = Math.max(p.glitch, 0.66);
@@ -4952,9 +5612,12 @@
                   interactionMode: "ripple",
                 });
                 recordTrigger("particle", `p-${p.id}`, ts);
-              }
+              });
             }
-            if (r.life <= 0) { ripples[i] = null; rippleDirty = true; }
+            if (r.life <= 0) {
+              ripples[i] = null;
+              rippleDirty = true;
+            }
           }
           if (rippleDirty) compactArray(ripples);
 
@@ -4967,7 +5630,10 @@
             s.vx *= sparkDamp;
             s.vy *= sparkDamp;
             s.life -= 0.02 * dt;
-            if (s.life <= 0) { sparks[i] = null; sparkDirty = true; }
+            if (s.life <= 0) {
+              sparks[i] = null;
+              sparkDirty = true;
+            }
           }
           if (sparkDirty) compactArray(sparks);
 
@@ -4976,7 +5642,10 @@
             const b = beams[i];
             b.t += b.speed * dt * (1 + state.energy * 0.2);
             b.life -= 0.028 * dt;
-            if (b.t >= 1 || b.life <= 0) { beams[i] = null; beamDirty = true; }
+            if (b.t >= 1 || b.life <= 0) {
+              beams[i] = null;
+              beamDirty = true;
+            }
           }
           if (beamDirty) compactArray(beams);
 
@@ -4985,7 +5654,10 @@
             const p = polyBursts[i];
             p.life -= 0.018 * dt;
             p.phase += 0.03 * dt;
-            if (p.life <= 0) { polyBursts[i] = null; polyDirty = true; }
+            if (p.life <= 0) {
+              polyBursts[i] = null;
+              polyDirty = true;
+            }
           }
           if (polyDirty) compactArray(polyBursts);
 
@@ -4994,7 +5666,10 @@
             const tri = frozenTriangles[i];
             tri.life -= tri.decay * dt;
             tri.phase += 0.08 * dt;
-            if (tri.life <= 0) { frozenTriangles[i] = null; frozenDirty = true; }
+            if (tri.life <= 0) {
+              frozenTriangles[i] = null;
+              frozenDirty = true;
+            }
           }
           if (frozenDirty) compactArray(frozenTriangles);
 
@@ -5002,7 +5677,10 @@
           const trailDecay = (0.04 / state.trailWarp) * dt;
           for (let i = 0; i < pointerTrail.length; i++) {
             pointerTrail[i].life -= trailDecay;
-            if (pointerTrail[i].life <= 0) { pointerTrail[i] = null; trailDirty = true; }
+            if (pointerTrail[i].life <= 0) {
+              pointerTrail[i] = null;
+              trailDirty = true;
+            }
           }
           if (trailDirty) compactArray(pointerTrail);
         }
@@ -5016,6 +5694,7 @@
         }
 
         function drawStarfieldOverlay(progress, ts) {
+          if (!perf.dynamicStars) return;
           ctx.save();
           ctx.globalCompositeOperation = "lighter";
           const triangleCharge = clamp(run.triangleActivations / 28, 0, 1);
@@ -5024,17 +5703,26 @@
           for (let i = 0; i < starfield.stars.length; i++) {
             const star = starfield.stars[i];
             const px =
-              star.x - 90 +
+              star.x -
+              90 +
               (mouse.normX - 0.5) * 28 * star.layer +
               Math.sin(ts * 0.00004 * star.layer + star.pulse) * 12;
             const py =
-              star.y - 90 +
+              star.y -
+              90 +
               (mouse.normY - 0.5) * 28 * star.layer +
               Math.cos(ts * 0.00005 * star.layer + star.pulse) * 12;
-            const twinkle = 0.55 + Math.sin(ts * 0.001 * star.twinkle + star.pulse) * 0.45;
+            const twinkle =
+              0.55 + Math.sin(ts * 0.001 * star.twinkle + star.pulse) * 0.45;
             const alpha =
-              star.a * (0.12 + twinkle * 0.18 + state.bloom * 0.06 + tierGlow + mutationGlow);
-            const radius = star.r * (0.8 + twinkle * 0.55) * (star.giant ? 1.22 : 1);
+              star.a *
+              (0.12 +
+                twinkle * 0.18 +
+                state.bloom * 0.06 +
+                tierGlow +
+                mutationGlow);
+            const radius =
+              star.r * (0.8 + twinkle * 0.55) * (star.giant ? 1.22 : 1);
             ctx.fillStyle = `hsla(${mod(star.hue + state.hueShift * 0.06, 360)}, 100%, ${74 + twinkle * 18}%, ${alpha})`;
             ctx.beginPath();
             ctx.arc(px, py, radius, 0, TAU);
@@ -5044,8 +5732,16 @@
         }
 
         function drawMechanicHints(ts) {
+          if (!perf.drawMechanicHints || (!mouse.captured && !mouse.down))
+            return;
           const hint = triangleEvolutionHint();
-          if (!hint.current && !hint.nearby && hint.evolution <= 0.03 && hint.grip <= 0.03) return;
+          if (
+            !hint.current &&
+            !hint.nearby &&
+            hint.evolution <= 0.03 &&
+            hint.grip <= 0.03
+          )
+            return;
           ctx.save();
           ctx.globalCompositeOperation = "lighter";
           const baseHue = mod(state.hueShift + 120 + ts * 0.008, 360);
@@ -5075,14 +5771,26 @@
             ctx.strokeStyle = `hsla(${mod(baseHue + 60, 360)}, 100%, 82%, ${0.05 + hint.evolution * 0.16})`;
             ctx.lineWidth = 1.4;
             ctx.beginPath();
-            ctx.arc(mouse.x, mouse.y, 46 + hint.evolution * 26, -Math.PI / 2, -Math.PI / 2 + TAU * hint.evolution);
+            ctx.arc(
+              mouse.x,
+              mouse.y,
+              46 + hint.evolution * 26,
+              -Math.PI / 2,
+              -Math.PI / 2 + TAU * hint.evolution,
+            );
             ctx.stroke();
           }
           if (hint.grip > 0.02 && mouse.down) {
             ctx.strokeStyle = `hsla(${mod(baseHue - 36, 360)}, 100%, 84%, ${0.08 + hint.grip * 0.18})`;
             ctx.lineWidth = 2.2;
             ctx.beginPath();
-            ctx.arc(mouse.x, mouse.y, 20, -Math.PI / 2, -Math.PI / 2 + TAU * hint.grip);
+            ctx.arc(
+              mouse.x,
+              mouse.y,
+              20,
+              -Math.PI / 2,
+              -Math.PI / 2 + TAU * hint.grip,
+            );
             ctx.stroke();
             ctx.strokeStyle = `hsla(${mod(baseHue + 20, 360)}, 100%, 78%, ${0.06 + hint.grip * 0.12})`;
             ctx.lineWidth = 1.1;
@@ -5113,7 +5821,7 @@
           ctx.save();
           ctx.globalCompositeOperation = "lighter";
 
-          for (let i = 0; i < 3; i++) {
+          for (let i = 0; i < perf.auroraLayers; i++) {
             const yBase =
               state.height * (0.18 + i * 0.28) +
               Math.sin(ts * 0.00018 * (1 + i * 0.2) + i) * state.height * 0.06;
@@ -5154,19 +5862,21 @@
               yBase + waveY4,
             );
             ctx.stroke();
-            ctx.strokeStyle = `hsla(${mod(hueA + 40, 360)}, 100%, 72%, ${0.012 + state.bloom * 0.015})`;
-            ctx.lineWidth = 110 + i * 22 + progress * 60;
-            ctx.beginPath();
-            ctx.moveTo(-80, yBase + waveY1 * 1.1);
-            ctx.bezierCurveTo(
-              state.width * 0.22,
-              yBase - 20 + waveY2 * 1.1,
-              state.width * 0.64,
-              yBase + 35 + waveY3 * 1.1,
-              state.width + 80,
-              yBase + waveY4 * 1.1,
-            );
-            ctx.stroke();
+            if (perf.auroraBloomPass) {
+              ctx.strokeStyle = `hsla(${mod(hueA + 40, 360)}, 100%, 72%, ${0.012 + state.bloom * 0.015})`;
+              ctx.lineWidth = 110 + i * 22 + progress * 60;
+              ctx.beginPath();
+              ctx.moveTo(-80, yBase + waveY1 * 1.1);
+              ctx.bezierCurveTo(
+                state.width * 0.22,
+                yBase - 20 + waveY2 * 1.1,
+                state.width * 0.64,
+                yBase + 35 + waveY3 * 1.1,
+                state.width + 80,
+                yBase + waveY4 * 1.1,
+              );
+              ctx.stroke();
+            }
           }
 
           ctx.restore();
@@ -5177,9 +5887,17 @@
           ctx.globalCompositeOperation = "lighter";
 
           for (const r of ripples) {
-            const a = r.life * (r.activation ? 0.18 + state.bloom * 0.2 : 0.10 + state.bloom * 0.14);
+            const a =
+              r.life *
+              (r.activation
+                ? 0.18 + state.bloom * 0.2
+                : 0.1 + state.bloom * 0.14);
             ctx.strokeStyle = `hsla(${mod(r.hue, 360)}, 100%, ${r.activation ? 80 + r.life * 10 : 72 + r.life * 16}%, ${a})`;
-            ctx.lineWidth = Math.max(0.4, r.thickness * (r.activation ? 0.95 + r.life * 0.9 : 0.6 + r.life * 0.7));
+            ctx.lineWidth = Math.max(
+              0.4,
+              r.thickness *
+                (r.activation ? 0.95 + r.life * 0.9 : 0.6 + r.life * 0.7),
+            );
             ctx.beginPath();
             ctx.arc(r.x, r.y, r.r, 0, TAU);
             ctx.stroke();
@@ -5235,8 +5953,8 @@
             const chromaSpread = dissolve * 3.2;
             const layers = [
               { hOff: -18, xOff: -chromaSpread, yOff: -chromaSpread * 0.6 },
-              { hOff: 0,   xOff: 0,             yOff: 0 },
-              { hOff: 22,  xOff: chromaSpread,   yOff: chromaSpread * 0.6 },
+              { hOff: 0, xOff: 0, yOff: 0 },
+              { hOff: 22, xOff: chromaSpread, yOff: chromaSpread * 0.6 },
             ];
             for (const layer of layers) {
               const lh = mod(hue + layer.hOff, 360);
@@ -5257,7 +5975,10 @@
             if (t > 0.4) {
               const glowR = 18 + (1 - t) * 30;
               const gg = ctx.createRadialGradient(cx, cy, 0, cx, cy, glowR);
-              gg.addColorStop(0, `hsla(${hue}, 100%, 85%, ${baseAlpha * 0.22})`);
+              gg.addColorStop(
+                0,
+                `hsla(${hue}, 100%, 85%, ${baseAlpha * 0.22})`,
+              );
               gg.addColorStop(1, "rgba(0,0,0,0)");
               ctx.fillStyle = gg;
               ctx.beginPath();
@@ -5314,19 +6035,35 @@
 
             const sat = 68 + state.energy * 18;
             const lum = 42 + e.alpha * 28 + (hover ? 14 : 0);
-            if (alpha > 0.12 || hover) {
-              const edgeGrad = ctx.createLinearGradient(e.p1.x, e.p1.y, e.p2.x, e.p2.y);
+            if (perf.simpleEdges) {
+              ctx.strokeStyle = `hsla(${e.hue}, ${sat}%, ${lum + 6}%, ${alpha})`;
+            } else if (alpha > 0.12 || hover) {
+              const edgeGrad = ctx.createLinearGradient(
+                e.p1.x,
+                e.p1.y,
+                e.p2.x,
+                e.p2.y,
+              );
               const h1 = mod(e.hue - 12, 360);
               const h2 = mod(e.hue + 12, 360);
-              edgeGrad.addColorStop(0, `hsla(${h1}, ${sat}%, ${lum}%, ${alpha * 0.7})`);
-              edgeGrad.addColorStop(0.5, `hsla(${e.hue}, ${sat + 8}%, ${lum + 6}%, ${alpha})`);
-              edgeGrad.addColorStop(1, `hsla(${h2}, ${sat}%, ${lum}%, ${alpha * 0.7})`);
+              edgeGrad.addColorStop(
+                0,
+                `hsla(${h1}, ${sat}%, ${lum}%, ${alpha * 0.7})`,
+              );
+              edgeGrad.addColorStop(
+                0.5,
+                `hsla(${e.hue}, ${sat + 8}%, ${lum + 6}%, ${alpha})`,
+              );
+              edgeGrad.addColorStop(
+                1,
+                `hsla(${h2}, ${sat}%, ${lum}%, ${alpha * 0.7})`,
+              );
               ctx.strokeStyle = edgeGrad;
             } else {
               ctx.strokeStyle = `hsla(${e.hue}, ${sat}%, ${lum}%, ${alpha})`;
             }
 
-            if (hover) {
+            if (hover && !perf.simpleEdges) {
               ctx.shadowColor = `hsla(${e.hue}, 100%, 70%, ${0.5 + state.bloom * 0.2})`;
               ctx.shadowBlur = 14 + state.bloom * 8;
             }
@@ -5336,7 +6073,17 @@
             ctx.lineTo(e.p2.x, e.p2.y);
             ctx.stroke();
 
-            if (e.alpha > 0.6 && state.bloom > 0.3) {
+            if (perf.simpleEdges && alpha > 0.06) {
+              ctx.strokeStyle = `hsla(${e.hue}, 100%, ${lum + 18}%, ${alpha * 0.22})`;
+              ctx.lineWidth =
+                (hover ? 2.6 : 0.35 + e.alpha * 1.75) + 1.4 + state.bloom * 0.8;
+              ctx.beginPath();
+              ctx.moveTo(e.p1.x, e.p1.y);
+              ctx.lineTo(e.p2.x, e.p2.y);
+              ctx.stroke();
+            }
+
+            if (!perf.simpleEdges && e.alpha > 0.6 && state.bloom > 0.3) {
               ctx.strokeStyle = `hsla(${e.hue}, 100%, 82%, ${alpha * 0.12})`;
               ctx.lineWidth = ctx.lineWidth + 3 + state.bloom * 2;
               ctx.beginPath();
@@ -5361,21 +6108,26 @@
             ctx.lineTo(b.x2, b.y2);
             ctx.stroke();
 
-            const rg = ctx.createRadialGradient(
-              x,
-              y,
-              0,
-              x,
-              y,
-              20 + state.bloom * 18,
-            );
-            rg.addColorStop(0, `hsla(${hue}, 100%, 90%, ${0.65 * b.life})`);
-            rg.addColorStop(0.35, `hsla(${hue}, 100%, 70%, ${0.25 * b.life})`);
-            rg.addColorStop(1, "rgba(0,0,0,0)");
-            ctx.fillStyle = rg;
-            ctx.beginPath();
-            ctx.arc(x, y, 20 + state.bloom * 18, 0, TAU);
-            ctx.fill();
+            if (!perf.simpleEdges) {
+              const rg = ctx.createRadialGradient(
+                x,
+                y,
+                0,
+                x,
+                y,
+                20 + state.bloom * 18,
+              );
+              rg.addColorStop(0, `hsla(${hue}, 100%, 90%, ${0.65 * b.life})`);
+              rg.addColorStop(
+                0.35,
+                `hsla(${hue}, 100%, 70%, ${0.25 * b.life})`,
+              );
+              rg.addColorStop(1, "rgba(0,0,0,0)");
+              ctx.fillStyle = rg;
+              ctx.beginPath();
+              ctx.arc(x, y, 20 + state.bloom * 18, 0, TAU);
+              ctx.fill();
+            }
           }
 
           ctx.restore();
@@ -5405,26 +6157,33 @@
             const satelliteGlow = p.satellite ? 0.18 : 0;
 
             const glowR = r * (3.4 + state.bloom * 1.7 + p.flash * 0.8);
-            if (r > 1.5 || p.flash > 0.2 || hover) {
-              const g = ctx.createRadialGradient(x, y, 0, x, y, glowR);
-              g.addColorStop(
-                0,
-                `hsla(${hue}, 100%, ${76 + p.flash * 14}%, ${0.34 + (1 - p.z) * 0.18 + p.flash * 0.12 + satelliteGlow})`,
-              );
-              g.addColorStop(
-                0.35,
-                `hsla(${hue}, 100%, 62%, ${0.16 + (1 - p.z) * 0.12})`,
-              );
-              g.addColorStop(1, "rgba(0,0,0,0)");
-              ctx.fillStyle = g;
+            if (perf.simpleParticles) {
+              ctx.fillStyle = `hsla(${hue}, 100%, ${70 + p.flash * 10}%, ${0.12 + (1 - p.z) * 0.08 + p.flash * 0.06 + satelliteGlow})`;
               ctx.beginPath();
-              ctx.arc(x, y, glowR, 0, TAU);
+              ctx.arc(x, y, glowR * 0.72, 0, TAU);
               ctx.fill();
             } else {
-              ctx.fillStyle = `hsla(${hue}, 100%, 70%, ${0.12 + (1 - p.z) * 0.08})`;
-              ctx.beginPath();
-              ctx.arc(x, y, glowR * 0.5, 0, TAU);
-              ctx.fill();
+              if (r > 1.5 || p.flash > 0.2 || hover) {
+                const g = ctx.createRadialGradient(x, y, 0, x, y, glowR);
+                g.addColorStop(
+                  0,
+                  `hsla(${hue}, 100%, ${76 + p.flash * 14}%, ${0.34 + (1 - p.z) * 0.18 + p.flash * 0.12 + satelliteGlow})`,
+                );
+                g.addColorStop(
+                  0.35,
+                  `hsla(${hue}, 100%, 62%, ${0.16 + (1 - p.z) * 0.12})`,
+                );
+                g.addColorStop(1, "rgba(0,0,0,0)");
+                ctx.fillStyle = g;
+                ctx.beginPath();
+                ctx.arc(x, y, glowR, 0, TAU);
+                ctx.fill();
+              } else {
+                ctx.fillStyle = `hsla(${hue}, 100%, 70%, ${0.12 + (1 - p.z) * 0.08})`;
+                ctx.beginPath();
+                ctx.arc(x, y, glowR * 0.5, 0, TAU);
+                ctx.fill();
+              }
             }
 
             ctx.fillStyle = `hsla(${hue}, ${88 + state.energy * 10}%, ${62 + p.flash * 24}%, ${0.85 + (1 - p.z) * 0.12})`;
@@ -5432,27 +6191,41 @@
             ctx.arc(x, y, r, 0, TAU);
             ctx.fill();
 
-            ctx.fillStyle = `rgba(255,255,255,${0.22 + p.flash * 0.35 + (hover ? 0.3 : 0)})`;
-            ctx.beginPath();
-            ctx.arc(x, y, r * 0.38, 0, TAU);
-            ctx.fill();
-
-            if (hover || p.flash > 0.55) {
-              ctx.strokeStyle = `hsla(${hue}, 100%, 92%, ${0.45 + p.flash * 0.35 + (hover ? 0.18 : 0)})`;
-              ctx.lineWidth = 1.2 + p.flash * 1.6 + (hover ? 0.8 : 0);
+            if (perf.simpleParticles) {
+              ctx.fillStyle = `rgba(255,255,255,${0.18 + p.flash * 0.18 + (hover ? 0.18 : 0)})`;
               ctx.beginPath();
-              ctx.arc(x, y, r * (1.55 + p.flash * 0.22), 0, TAU);
-              ctx.stroke();
-            }
-            if (p.flash > 0.3) {
-              for (let ring = 1; ring <= 2; ring++) {
-                const ringR = r * (2.2 + ring * 1.4 + (1 - p.flash) * 2.8);
-                const ringA = p.flash * (0.12 / ring);
-                ctx.strokeStyle = `hsla(${mod(hue + ring * 25, 360)}, 100%, 80%, ${ringA})`;
-                ctx.lineWidth = 0.5 + p.flash * 0.6;
+              ctx.arc(x, y, r * 0.32, 0, TAU);
+              ctx.fill();
+              if (hover || p.flash > 0.5) {
+                ctx.strokeStyle = `hsla(${hue}, 100%, 88%, ${0.16 + p.flash * 0.12})`;
+                ctx.lineWidth = 0.8 + p.flash * 0.5;
                 ctx.beginPath();
-                ctx.arc(x, y, ringR, 0, TAU);
+                ctx.arc(x, y, r * 1.8, 0, TAU);
                 ctx.stroke();
+              }
+            } else {
+              ctx.fillStyle = `rgba(255,255,255,${0.22 + p.flash * 0.35 + (hover ? 0.3 : 0)})`;
+              ctx.beginPath();
+              ctx.arc(x, y, r * 0.38, 0, TAU);
+              ctx.fill();
+
+              if (hover || p.flash > 0.55) {
+                ctx.strokeStyle = `hsla(${hue}, 100%, 92%, ${0.45 + p.flash * 0.35 + (hover ? 0.18 : 0)})`;
+                ctx.lineWidth = 1.2 + p.flash * 1.6 + (hover ? 0.8 : 0);
+                ctx.beginPath();
+                ctx.arc(x, y, r * (1.55 + p.flash * 0.22), 0, TAU);
+                ctx.stroke();
+              }
+              if (p.flash > 0.3) {
+                for (let ring = 1; ring <= 2; ring++) {
+                  const ringR = r * (2.2 + ring * 1.4 + (1 - p.flash) * 2.8);
+                  const ringA = p.flash * (0.12 / ring);
+                  ctx.strokeStyle = `hsla(${mod(hue + ring * 25, 360)}, 100%, 80%, ${ringA})`;
+                  ctx.lineWidth = 0.5 + p.flash * 0.6;
+                  ctx.beginPath();
+                  ctx.arc(x, y, ringR, 0, TAU);
+                  ctx.stroke();
+                }
               }
             }
             if (p.satellite) {
@@ -5468,14 +6241,14 @@
         }
 
         function drawSparks() {
-          ctx.save()
+          ctx.save();
           ctx.globalCompositeOperation = "lighter";
 
           for (const s of sparks) {
             const hue = mod(s.hue, 360);
             const r = s.size * (0.7 + s.life * 0.6);
             const speed = Math.hypot(s.vx, s.vy);
-            if (speed > 0.4 && s.life > 0.25) {
+            if (!perf.simpleSparks && speed > 0.4 && s.life > 0.25) {
               const tailLen = Math.min(speed * 3.5, 14);
               const nx = s.vx / speed;
               const ny = s.vy / speed;
@@ -5490,8 +6263,15 @@
             ctx.beginPath();
             ctx.arc(s.x, s.y, r, 0, TAU);
             ctx.fill();
-            if (s.life > 0.7 && r > 1.2) {
-              const gg = ctx.createRadialGradient(s.x, s.y, 0, s.x, s.y, r * 2.8);
+            if (!perf.simpleSparks && s.life > 0.7 && r > 1.2) {
+              const gg = ctx.createRadialGradient(
+                s.x,
+                s.y,
+                0,
+                s.x,
+                s.y,
+                r * 2.8,
+              );
               gg.addColorStop(0, `hsla(${hue}, 100%, 90%, ${s.life * 0.18})`);
               gg.addColorStop(1, "rgba(0,0,0,0)");
               ctx.fillStyle = gg;
@@ -5505,6 +6285,7 @@
         }
 
         function drawCursor(ts) {
+          if (!mouse.captured && !mouse.down) return;
           const hue = mod(state.hueShift + ts * 0.01 + mouse.normX * 60, 360);
           const gripCharge = clamp(run.triangleGripCharge / 1.2, 0, 1);
           const satelliteCount = attachedSatelliteCount();
@@ -5567,19 +6348,45 @@
           }
 
           const pressPulse = state.audioPressure * 0.35;
-          ctx.shadowColor = `hsla(${hue}, 100%, 72%, ${0.55 + state.bloom * 0.15 + pressPulse * 0.12})`;
-          ctx.shadowBlur = 20 + state.bloom * 16 + pressPulse * 10;
+          if (!perf.simpleCursor) {
+            ctx.shadowColor = `hsla(${hue}, 100%, 72%, ${0.55 + state.bloom * 0.15 + pressPulse * 0.12})`;
+            ctx.shadowBlur = 20 + state.bloom * 16 + pressPulse * 10;
+          }
 
           ctx.fillStyle = `hsla(${hue}, 100%, ${78 + state.bloom * 8}%, ${0.72 + Math.sin(ts * 0.006) * 0.12 + pressPulse * 0.08})`;
           ctx.beginPath();
           ctx.arc(mouse.x, mouse.y, outerR * (1 + pressPulse * 0.14), 0, TAU);
           ctx.fill();
 
-          if (state.bloom > 0.35 || pressPulse > 0.15) {
+          if (perf.simpleCursor && (state.bloom > 0.2 || pressPulse > 0.08)) {
+            const auraR =
+              outerR * (1.9 + pressPulse * 0.8 + state.bloom * 0.45);
+            ctx.strokeStyle = `hsla(${mod(hue + 18, 360)}, 100%, 82%, ${0.12 + pressPulse * 0.08 + state.bloom * 0.04})`;
+            ctx.lineWidth = 1.2 + state.bloom * 0.8;
+            ctx.beginPath();
+            ctx.arc(mouse.x, mouse.y, auraR, 0, TAU);
+            ctx.stroke();
+          } else if (
+            !perf.simpleCursor &&
+            (state.bloom > 0.35 || pressPulse > 0.15)
+          ) {
             const auraR = outerR * (2.6 + pressPulse * 1.2 + state.bloom * 0.8);
-            const auraGrad = ctx.createRadialGradient(mouse.x, mouse.y, outerR * 0.8, mouse.x, mouse.y, auraR);
-            auraGrad.addColorStop(0, `hsla(${hue}, 100%, 80%, ${0.06 + pressPulse * 0.05})`);
-            auraGrad.addColorStop(0.5, `hsla(${mod(hue + 30, 360)}, 100%, 70%, ${0.02 + pressPulse * 0.02})`);
+            const auraGrad = ctx.createRadialGradient(
+              mouse.x,
+              mouse.y,
+              outerR * 0.8,
+              mouse.x,
+              mouse.y,
+              auraR,
+            );
+            auraGrad.addColorStop(
+              0,
+              `hsla(${hue}, 100%, 80%, ${0.06 + pressPulse * 0.05})`,
+            );
+            auraGrad.addColorStop(
+              0.5,
+              `hsla(${mod(hue + 30, 360)}, 100%, 70%, ${0.02 + pressPulse * 0.02})`,
+            );
             auraGrad.addColorStop(1, "rgba(0,0,0,0)");
             ctx.fillStyle = auraGrad;
             ctx.beginPath();
@@ -5588,7 +6395,8 @@
           }
 
           if (mouse.down && gripCharge > 0.02) {
-            const ciliaCount = 16 + Math.round(gripCharge * 20) + satelliteCount * 2;
+            const ciliaCount =
+              16 + Math.round(gripCharge * 20) + satelliteCount * 2;
             ctx.strokeStyle = `hsla(${mod(hue + 22, 360)}, 100%, 84%, ${0.12 + gripCharge * 0.22})`;
             ctx.lineWidth = 1 + gripCharge * 1.1;
             for (let i = 0; i < ciliaCount; i++) {
@@ -5596,8 +6404,14 @@
               const inner = outerR * (1.15 + Math.sin(ts * 0.004 + i) * 0.04);
               const outer = inner + 10 + gripCharge * 18 + satelliteCount * 2;
               ctx.beginPath();
-              ctx.moveTo(mouse.x + Math.cos(a) * inner, mouse.y + Math.sin(a) * inner);
-              ctx.lineTo(mouse.x + Math.cos(a) * outer, mouse.y + Math.sin(a) * outer);
+              ctx.moveTo(
+                mouse.x + Math.cos(a) * inner,
+                mouse.y + Math.sin(a) * inner,
+              );
+              ctx.lineTo(
+                mouse.x + Math.cos(a) * outer,
+                mouse.y + Math.sin(a) * outer,
+              );
               ctx.stroke();
             }
           }
@@ -5620,8 +6434,14 @@
             for (let i = 0; i < 4; i++) {
               const a = ts * 0.004 + i * (TAU / 4);
               ctx.beginPath();
-              ctx.moveTo(mouse.x + Math.cos(a) * (baseR * 2.6), mouse.y + Math.sin(a) * (baseR * 2.6));
-              ctx.lineTo(mouse.x + Math.cos(a) * (baseR * 4.1), mouse.y + Math.sin(a) * (baseR * 4.1));
+              ctx.moveTo(
+                mouse.x + Math.cos(a) * (baseR * 2.6),
+                mouse.y + Math.sin(a) * (baseR * 2.6),
+              );
+              ctx.lineTo(
+                mouse.x + Math.cos(a) * (baseR * 4.1),
+                mouse.y + Math.sin(a) * (baseR * 4.1),
+              );
               ctx.stroke();
             }
           } else {
@@ -5711,14 +6531,26 @@
           updateEvolution(ts, progress);
           updateRoguelike(ts);
           updateParticles(progress, ts);
-          buildEdges();
-          computeCursorTriangles();
+          buildParticleGrid();
+          if (!state._edgeFrame) state._edgeFrame = 0;
+          if (!state._triangleFrame) state._triangleFrame = 0;
+          if (
+            !edges.length ||
+            ++state._edgeFrame % perf.edgeRebuildInterval === 0
+          )
+            buildEdges();
+          if (
+            !cursorTriangles.length ||
+            ++state._triangleFrame % perf.triangleRebuildInterval === 0
+          )
+            computeCursorTriangles();
           updateAudioGovernor(ts);
           updateLoudnessNorm(state.dt);
           checkInteractionCombos(progress, ts);
           checkProximityAndTrigger(progress, ts);
           if (!state._secretFrame) state._secretFrame = 0;
-          if (++state._secretFrame % 2 === 0) checkSecretCombos(progress, ts);
+          if (++state._secretFrame % perf.secretComboInterval === 0)
+            checkSecretCombos(progress, ts);
           updateEffects(progress, ts);
           drawScene(progress, ts);
           if (!state._audioSettingsFrame) state._audioSettingsFrame = 0;
@@ -5729,13 +6561,30 @@
           updateHUD(ts);
         }
 
-        function cycleMode() {
-          const modes = availableModeIndices();
-          const currentIndex = modes.indexOf(state.modeIndex);
-          const nextIndex = currentIndex === -1 ? 0 : (currentIndex + 1) % modes.length;
-          state.modeIndex = modes[nextIndex];
-          state.targetModeIndex = state.modeIndex;
-          syncControlLabels();
+        function modeIndexFromProgression() {
+          const evo = state.evolutionLevel;
+          const tier = run.tier;
+          if (tier >= 5 && run.availableModes.includes(7)) return 7;
+          if (tier >= 4 && run.availableModes.includes(6)) return 6;
+          if (tier >= 3 && run.availableModes.includes(5)) return 5;
+          if (evo >= 0.92 && run.availableModes.includes(4)) return 4;
+          if (evo >= 0.7 && run.availableModes.includes(3)) return 3;
+          if (evo >= 0.46 && run.availableModes.includes(2)) return 2;
+          if (evo >= 0.22 && run.availableModes.includes(1)) return 1;
+          return run.availableModes.includes(0)
+            ? 0
+            : run.availableModes[0] || 0;
+        }
+
+        function updateModeFromProgression() {
+          const target = modeIndexFromProgression();
+          if (
+            target !== state.modeIndex &&
+            run.availableModes.includes(target)
+          ) {
+            state.modeIndex = target;
+            state.targetModeIndex = target;
+          }
         }
 
         function toggleMute() {
@@ -5833,8 +6682,6 @@
               e.preventDefault();
               state.paused = !state.paused;
               if (!state.paused) state.lastTs = 0;
-            } else if (e.code === "KeyC") {
-              cycleMode();
             } else if (e.code === "KeyR") {
               randomizeWorld(true);
             } else if (e.code === "KeyH") {
@@ -5849,7 +6696,7 @@
 
         async function startExperience() {
           activationScreen.style.display = "none";
-          state.lastUserIntentTime = performance.now();
+          state.lastUserIntentTime = 0;
           setUIVisible(false);
           resizeCanvas();
           syncParticleCount();

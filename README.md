@@ -1,6 +1,6 @@
-# dich
+# Dich // Bloom
 
-A single-file roguelike audiovisual instrument built in plain HTML, Canvas 2D, and Web Audio.
+A single-file audiovisual instrument built in plain HTML, Canvas 2D, and Web Audio.
 
 Open `dich.html` in a modern browser and interact with the world using the cursor and the left mouse button. There is no visible HUD and no on-screen control panel. The piece is meant to be discovered through play.
 
@@ -31,7 +31,6 @@ Shortcuts are based on **physical key codes**, not typed characters, so they wor
 - **M** — mute / unmute
 - **F** — fullscreen
 - **Space** — pause / resume
-- **C** — cycle available cursor modes
 
 Mouse:
 
@@ -47,7 +46,7 @@ The world has three interactive layers:
 
 When the cursor touches a node, it plays the node's **genetic percussion**.
 
-Every node has its own DNA, so node hits are not simple repeated samples. A node can behave like a click, tom, hat, snap, FM hit, or filtered noise depending on its genes.
+Every node has its own DNA, so node hits are not simple repeated samples. A node can behave like a click, tom, hat, snap, FM hit, filtered noise, metallic ring, grain burst, pluck, or breath depending on its genes.
 
 ### 2. Edge interaction
 
@@ -136,6 +135,9 @@ Current gene traits include:
 - `pitchEnv`
 - `percStyle`
 - `scaleDegree`
+- `brightness` — filter intensity and high-frequency content
+- `spread` — stereo detune and harmonic width
+- `articulation` — attack sharpness and transient character
 
 ### Gene crossover
 
@@ -224,18 +226,18 @@ Runs can also trigger rarer world events that may reshuffle genes, colors, scale
 
 ## Cursor Modes
 
-The system includes 8 cursor modes:
+The cursor evolves alongside the world. Mode is determined by progression level and run tier:
 
-- Repel
-- Attract
-- Orbit
-- Stir
-- Vortex
-- Scatter
-- Gravity
-- Pulse
+- **Repel** — starting mode
+- **Attract** — unlocks at evolution level 0.22 (Genesis → Drift)
+- **Orbit** — unlocks at evolution level 0.46 (Drift → Bloom)
+- **Stir** — unlocks at evolution level 0.7 (Bloom → Ascension)
+- **Vortex** — unlocks at evolution level 0.92 (Ascension → Singularity)
+- **Scatter** — unlocks at tier 3 (Resonant)
+- **Gravity** — unlocks at tier 4 (Architect)
+- **Pulse** — unlocks at tier 5 (Ascended)
 
-Not all modes are necessarily available immediately in every run. Some become available as the run evolves.
+The cursor mode changes automatically as the run deepens. Not all modes are necessarily available in every run — some are rolled at world generation.
 
 ## Combo Layer
 
@@ -304,6 +306,9 @@ Audio management includes:
 - dynamic throttling for low-priority layers
 - shared effect buses
 - compression on the master chain
+- brick-wall limiter for clipping protection
+- per-kind loudness normalization with activity ducking
+- velocity-sensitive articulation based on cursor speed
 - reduced ambient interference during active play
 
 User-driven sounds are favored over decorative or ambient activity.
@@ -323,6 +328,9 @@ Current profiles include common and rare identities such as:
 - Xeno Koto
 - Void Organ
 - Mercury Bells
+- Obsidian Choir
+- Silk Thread
+- Iron Garden
 
 The scale library includes 11 modes/scales, including both familiar and more exotic options.
 
